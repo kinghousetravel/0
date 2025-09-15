@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>King House Travel — Winter Tours 2026</title>
+  <meta name="description" content="Elite winter tours, alpine retreats, aurora expeditions, hot springs. King House Travel — luxury seasonal journeys across Europe." />
+  <meta property="og:title" content="King House Travel — Winter Tours 2026" />
+  <meta property="og:description" content="Book elite winter tours with glass UI, music, and multilingual support." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=1600&auto=format&fit=crop" />
+  <link rel="canonical" href="https://kinghousetravel.example/winter-2026" />
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2744.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    img-src 'self' https://images.unsplash.com https://cdn.jsdelivr.net https://i.ytimg.com data:;
+    media-src 'self' https://cdn.pixabay.com;
+    script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://js.stripe.com https://www.youtube.com https://www.paypal.com https://www.paypalobjects.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;
+    frame-src https://js.stripe.com https://www.paypal.com https://commerce.coinbase.com https://www.youtube.com https://youtube.com https://www.youtube-nocookie.com;
+    connect-src 'self' https://fonts.gstatic.com https://api.stripe.com https://api.coinbase.com https://www.youtube.com;
+  " />
+  
+  <style>
+    :root{
+      --bg:#0b1220;
+      --bg-alt:#04070f;
+      --card:#0f1830cc;
+      --glass:rgba(255,255,255,.06);
+      --stroke:rgba(255,255,255,.12);
+      --text:#eef2ff;
+      --muted:#b7c0da;
+      --gold:rgba(100, 180, 255, 0.7); /* Змінено на зимовий холодний синюватий колір */
+      --accent:#89b4ff;
+      --shadow:0 10px 35px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+    body.light-theme{
+      --bg:#f5f6f5;
+      --bg-alt:#e8ecef;
+      --card:#ffffffcc;
+      --glass:rgba(0,0,0,.06);
+      --stroke:rgba(0,0,0,.12);
+      --text:#0b1220;
+      --muted:#4b5e7a;
+      --shadow:0 10px 35px rgba(0,0,0,.2);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color:var(--text);
+      background: var(--bg);
+      overflow-x:hidden;
+    }
+    @media (hover:hover) and (pointer:fine){
+      body{ cursor: none; }
+    }
+    body.night-sky .frost{background: radial-gradient(1000px 600px at 20% 10%, rgba(255,255,255,.04), transparent 60%),
+                                     radial-gradient(900px 600px at 80% 90%, rgba(255,255,255,.03), transparent 60%),
+                                     linear-gradient(to bottom, rgba(2,6,14,.7), rgba(3,8,20,.25) 40%, rgba(2,6,14,.8));}
+    body.night-sky .starfield{opacity:0} /* Прибрано білі цяточки в темній темі */
+    body.light-theme .frost{background: radial-gradient(1200px 600px at 10% 10%, rgba(0,0,0,.06), transparent 60%), radial-gradient(900px 600px at 90% 90%, rgba(0,0,0,.05), transparent 60%), linear-gradient(to bottom, rgba(200,200,200,.2), rgba(200,200,200,.1) 40%, rgba(200,200,200,.2));}
+    body.light-theme .starfield{opacity:0}
+    .video-bg{position:fixed; inset:0; z-index:-2; width:100%; height:100%; overflow:hidden}
+    .video-bg video{position:absolute; top:50%; left:50%; min-width:100%; min-height:100%; width:auto; height:auto; transform:translate(-50%, -50%); object-fit:cover; border:none}
+    .video-overlay{position:fixed; inset:0; z-index:-1; background:rgba(0,0,0,0.7); pointer-events:none}
+    body.light-theme .video-overlay{ background: rgba(255,255,255,0.45); }
+    .frost{position:fixed; inset:0; z-index:0; background: radial-gradient(1200px 600px at 10% 10%, rgba(255,255,255,.08), transparent 60%), radial-gradient(900px 600px at 90% 90%, rgba(255,255,255,.07), transparent 60%), linear-gradient(to bottom, rgba(13,18,34,.6), rgba(13,18,34,.2) 40%, rgba(13,18,34,.7)); pointer-events:none}
+    .starfield{position:fixed; inset:0; z-index:1; opacity:0; transition:opacity .6s ease; pointer-events:none}
+    .star{position:absolute; width:2px; height:2px; background:#fff7; border-radius:50%; box-shadow:0 0 8px #fff6}
+    .wrap{max-width:1200px; margin:0 auto; padding:24px}
+    header.top{display:flex; align-items:center; justify-content:space-between; gap:12px; position:sticky; top:0; z-index:5; padding:14px 16px; margin:-14px -16px 20px; background: linear-gradient(to bottom, rgba(5,8,18,.7), rgba(5,8,18,.35)); backdrop-filter: blur(8px); border-bottom:1px solid var(--stroke)}
+    body.light-theme header.top{background: linear-gradient(to bottom, rgba(255,255,255,.7), rgba(255,255,255,.35));}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:42px; height:42px; border-radius:50%; display:grid; place-items:center; font-weight:800; letter-spacing:.5px; color:#0b1220; background: radial-gradient(120% 120% at 30% 30%, #b3d9ff, var(--gold) 55%, #6bb6ff 100%); border:1px solid #b3d9ff; box-shadow: 0 2px 12px rgba(100, 180, 255, .35), inset 0 0 4px rgba(255,255,255,.5)}
+    .title{font-weight:800; font-size:18px; line-height:1}
+    .title small{display:block; font-weight:600; color:var(--gold)}
+    .actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+    .btn{appearance:none; border:none; cursor:pointer; padding:10px 14px; border-radius:999px; font-weight:700; background: linear-gradient(45deg, var(--gold), #b3d9ff); color:#0b1220; box-shadow:0 6px 16px rgba(100, 180, 255, .35); transition: transform .15s ease, box-shadow .15s ease}
+    .btn:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(100, 180, 255, .45)}
+    .btn.ghost{background:rgba(255,255,255,.06); color:var(--text); border:1px solid var(--stroke); box-shadow:none}
+    body.light-theme .btn.ghost{background:rgba(0,0,0,.06); border:1px solid var(--stroke);}
+    .btn.ghost:hover{background:rgba(255,255,255,.1)}
+    body.light-theme .btn.ghost:hover{background:rgba(0,0,0,.1)}
+    .cart-btn{position:relative}
+    .cart-count{position:absolute; top:-6px; right:-6px; background:var(--gold); color:#0b1220; border-radius:50%; font-size:12px; width:18px; height:18px; display:grid; place-items:center; font-weight:700}
+    .hero{display:grid; gap:18px; padding:28px; border-radius:var(--radius); background: linear-gradient(180deg, rgba(21,29,54,.55), rgba(21,29,54,.35)); border:1px solid var(--stroke); backdrop-filter: blur(10px); box-shadow: var(--shadow)}
+    body.light-theme .hero{background: linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,.35));}
+    .hero h1{font-size: clamp(32px, 4vw, 56px); line-height:1.05; font-weight:900; letter-spacing:.2px}
+    .hero h1 .gold{color:var(--gold); text-shadow:0 2px 12px rgba(100, 180, 255, .35)}
+    .hero p{color:var(--muted); max-width:60ch}
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:6px}
+    .grid{display:grid; gap:22px; margin:28px 0; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))}
+    .card{background: var(--card); border:1px solid var(--stroke); border-radius:var(--radius); overflow:hidden; box-shadow: var(--shadow); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease}
+    .card:hover{ transform: translateY(-6px); border-color: rgba(100, 180, 255, .45); box-shadow: 0 16px 40px rgba(0,0,0,.55)}
+    .card .img{height:190px; background-size:cover; background-position:center}
+    .card .body{padding:16px}
+    .card h3{font-size:18px; margin-bottom:6px; color:var(--gold)}
+    .card p{font-size:14px; color:var(--muted); line-height:1.5}
+    .price{display:inline-block; margin-top:10px; padding:6px 10px; border-radius:999px; background:rgba(100, 180, 255, .18); color:var(--gold); font-weight:800}
+    .buy{margin-top:12px; display:flex; gap:8px}
+    .wellness{display:grid; gap:16px; padding:28px; border-radius:22px; background: linear-gradient(180deg, rgba(21,29,54,.55), rgba(21,29,54,.35)); border:1px solid var(--stroke); backdrop-filter: blur(10px); box-shadow: var(--shadow); margin: 10px 0 28px}
+    body.light-theme .wellness{background: linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,.35));}
+    .wellness h2{font-size: clamp(26px, 3.2vw, 40px)}
+    .pill{display:inline-block; padding:8px 12px; border-radius:999px; border:1px solid var(--stroke); background:rgba(255,255,255,.05); margin-right:8px; margin-top:8px}
+    body.light-theme .pill{background:rgba(0,0,0,.05);}
+    footer{margin:32px 0 18px; text-align:center; color:#cdd6f4aa}
+    body.light-theme footer{color:#4b5e7aaa}
+    .company-info{margin-top:40px; padding:20px; border-radius:var(--radius); background: linear-gradient(180deg, rgba(21,29,54,.55), rgba(21,29,54,.35)); border:1px solid var(--stroke); backdrop-filter: blur(10px); box-shadow: var(--shadow)}
+    body.light-theme .company-info{background: linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,.35));}
+    .company-info h3{color:var(--gold); margin-bottom:12px; font-size:20px}
+    .company-info p{color:var(--muted); line-height:1.6}
+    .modal{position:fixed; inset:0; display:none; place-items:center; z-index:20; background: rgba(3,6,12,.6); backdrop-filter: blur(6px)}
+    body.light-theme .modal{background: rgba(255,255,255,.6);}
+    .modal.open{display:grid}
+    .sheet{width:min(720px, 92vw); background: var(--card); border:1px solid var(--stroke); border-radius:24px; padding:22px; box-shadow: 0 30px 80px rgba(0,0,0,.6)}
+    .sheet h2{margin-bottom:6px}
+    .form{display:grid; gap:12px; margin-top:10px}
+    .row{display:grid; gap:12px; grid-template-columns:1fr 1fr}
+    .row .full{grid-column:1 / -1}
+    input, select, textarea{width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--stroke); background:rgba(255,255,255,.04); color:var(--text); outline:none}
+    body.light-theme input, body.light-theme select, body.light-theme textarea{background:rgba(0,0,0,.04);}
+    textarea{min-height:90px; resize:vertical}
+    .payrow{display:flex; gap:10px; flex-wrap:wrap}
+    .cart-item{display:grid; gap:8px; padding:12px; border-bottom:1px solid var(--stroke)}
+    .cart-item:last-child{border-bottom:none}
+    .cart-item button{font-size:12px; padding:6px 10px}
+    @media (max-width:720px){ .row{grid-template-columns:1fr} }
+    .cursor-dot{position:fixed; top:0; left:0; width:30px; height:30px; margin-top:-15px; margin-left:-15px; border-radius:50%; pointer-events:none; background: radial-gradient(circle, #89b4ff, #89b4ff00 70%); mix-blend-mode: screen; opacity:0.9; z-index:50; transition: transform 0.1s ease; box-shadow: 0 0 15px rgba(137, 180, 255, 0.7)}
+    body.light-theme .cursor-dot{background: radial-gradient(circle, #0b1220, #0b122000 70%); box-shadow: 0 0 15px rgba(11, 18, 32, 0.7)}
+    .chat-launcher{position:fixed; right:18px; bottom:18px; z-index:60; border:0; border-radius:999px; padding:14px 16px; background:linear-gradient(45deg, var(--gold), #b3d9ff); color:#0b1220; font-weight:800; box-shadow:0 12px 30px rgba(100, 180, 255, .45); cursor:pointer}
+    .chatbox{position:fixed; right:18px; bottom:82px; width:min(380px, 92vw); height:520px; display:none; grid-template-rows:auto 1fr auto; background:var(--card); border:1px solid var(--stroke); border-radius:16px; overflow:hidden; z-index:60; box-shadow:0 30px 80px rgba(0,0,0,.6)}
+    .chatbox.open{display:grid}
+    .chat-header{display:flex; align-items:center; justify-content:space-between; gap:8px; padding:10px 12px; background:linear-gradient(to right, rgba(5,8,18,.8), rgba(5,8,18,.55)); border-bottom:1px solid var(--stroke)}
+    body.light-theme .chat-header{background:linear-gradient(to right, rgba(255,255,255,.8), rgba(255,255,255,.55));}
+    .chat-header .ttl{font-weight:900}
+    .chat-header .ttl small{display:block; color:var(--gold)}
+    .chat-messages{padding:12px; overflow:auto; display:flex; flex-direction:column; gap:8px; scroll-behavior:smooth}
+    .msg{max-width:85%; padding:10px 12px; border-radius:14px; line-height:1.45; box-shadow:var(--shadow)}
+    .msg.bot{align-self:flex-start; background:rgba(255,255,255,.06); border:1px solid var(--stroke)}
+    body.light-theme .msg.bot{background:rgba(0,0,0,.06);}
+    .msg.user{align-self:flex-end; background:linear-gradient(45deg, var(--gold), #b3d9ff); color:#0b1220; font-weight:700}
+    .msg small{display:block; opacity:.7; font-size:11px; margin-top:4px}
+    .chat-input{display:flex; gap:8px; padding:10px; border-top:1px solid var(--stroke); background:rgba(255,255,255,.03)}
+    body.light-theme .chat-input{background:rgba(0,0,0,.03);}
+    .chat-input input{flex:1; padding:10px 12px; border-radius:12px; border:1px solid var(--stroke); background:rgba(255,255,255,.05); color:var(--text)}
+    body.light-theme .chat-input input{background:rgba(0,0,0,.05);}
+    .chipbar{display:flex; flex-wrap:wrap; gap:6px; padding:6px 10px; border-top:1px dashed var(--stroke); background:rgba(255,255,255,.02)}
+    body.light-theme .chipbar{background:rgba(0,0,0,.02);}
+    .chip{border:1px solid var(--stroke); background:rgba(255,255,255,.05); color:var(--text); padding:6px 10px; border-radius:999px; font-size:12px; cursor:pointer}
+    body.light-theme .chip{background:rgba(0,0,0,.05);}
+    .typing{display:flex; align-items:center; gap:6px; opacity:.8}
+    .dot{width:6px; height:6px; border-radius:50%; background:#fff; opacity:.8; animation:blink 1s infinite ease-in-out}
+    body.light-theme .dot{background:#0b1220;}
+    .dot:nth-child(2){animation-delay:.2s} .dot:nth-child(3){animation-delay:.4s}
+    @keyframes blink{0%,80%,100%{opacity:.2} 40%{opacity:1}}
+    
+    /* Language selector styles */
+    .language-selector {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .language-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      border: 1px solid var(--stroke);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    body.light-theme .language-btn {
+      background: rgba(0,0,0,.06);
+    }
+    
+    .language-btn:hover {
+      background: rgba(255,255,255,.1);
+    }
+    
+    body.light-theme .language-btn:hover {
+      background: rgba(0,0,0,.1);
+    }
+    
+    .language-dropdown {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 8px;
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.3);
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.25s ease;
+      z-index: 100;
+      min-width: 160px;
+    }
+    
+    .language-dropdown.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    
+    .language-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    
+    .language-option:hover {
+      background: rgba(255,255,255,.05);
+    }
+    
+    body.light-theme .language-option:hover {
+      background: rgba(0,0,0,.05);
+    }
+    
+    .language-option.active {
+      background: rgba(100, 180, 255, .15);
+      color: var(--gold);
+      font-weight: 700;
+    }
+    
+    .language-flag {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-bg">
+    <video 
+      title="Winter tours background video"
+      autoplay 
+      muted 
+      loop 
+      playsinline
+    >
+      <source src="/kht/Summiting the Matterhorn with an FPV Drone [get-speed.com].mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-overlay"></div>
+  <div class="frost"></div>
+  <div class="starfield" id="starfield"></div>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">KHT</div>
+        <div class="title">
+          <span data-i18n="company-name">King House Travel</span> 
+          <small data-i18n="season-title">Winter Tours 2026</small>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="openBook" data-i18n="buy-winter-tour">Buy Winter Tour</button>
+        <button class="btn ghost" id="musicBtn" aria-pressed="false" aria-label="Toggle background music" data-i18n="music-off">Music: Off</button>
+        <button class="btn ghost" id="themeBtn" title="Toggle theme" aria-label="Toggle theme" data-i18n="theme-dark">Theme: Dark ✨</button>
+        
+        <!-- Language selector -->
+        <div class="language-selector">
+          <button class="language-btn" id="languageBtn" aria-expanded="false" aria-label="Select language">
+            <span class="language-flag" id="currentFlag">🇬🇧</span>
+            <span id="currentLang">EN</span>
+            <span>▼</span>
+          </button>
+          <div class="language-dropdown" id="languageDropdown">
+            <div class="language-option active" data-lang="en">
+              <span class="language-flag">🇬🇧</span>
+              <span data-i18n="lang-en">English</span>
+            </div>
+            <div class="language-option" data-lang="cs">
+              <span class="language-flag">🇨🇿</span>
+              <span data-i18n="lang-cs">Czech</span>
+            </div>
+            <div class="language-option" data-lang="it">
+              <span class="language-flag">🇮🇹</span>
+              <span data-i18n="lang-it">Italian</span>
+            </div>
+          </div>
+        </div>
+        
+        <button class="btn ghost cart-btn" id="cartBtn" title="Cart" aria-label="Open cart">
+          <span class="cart-count" id="cartCount">0</span>
+          <span data-i18n="cart">Cart</span>
+        </button>
+      </div>
+    </header>
+    <section class="hero" aria-label="Hero" lang="en">
+      <h1><span class="gold" data-i18n="elite-winter-journeys">Elite</span> <span data-i18n="winter-journeys-title">Winter Journeys — Alps, Aurora & Hot Springs</span></h1>
+      <p data-i18n="hero-description">Glass-clear luxury UI, curated 5★ stays, private transfers, and signature „Olympic Wellness“ programs. Book in one click — multilingual and mobile-first. <strong>Bookings now open for 2026 season!</strong></p>
+      <div class="cta-row">
+        <button class="btn" id="heroBook" data-i18n="book-now">Book Now</button>
+        <a class="btn ghost" href="#tours" data-i18n="explore-tours">Explore Tours</a>
+      </div>
+    </section>
+    <section id="tours" class="grid" aria-label="Winter tours">
+      <article class="card">
+        <div class="img" data-src="https://images.unsplash.com/photo-1516684669134-de6f7c473a2a?q=80&w=1600&auto=format&fit=crop"></div>
+        <div class="body">
+          <h3 data-i18n="alpine-ski-resort">Alpine Ski Resort · Switzerland</h3>
+          <p lang="en" data-i18n="alpine-ski-description">Private chalet, concierge, spa & gourmet dining. Perfect carving on world-class pistes. (2026 season)</p>
+          <span class="price" data-i18n="price-from">from €2,499</span>
+          <div class="buy">
+            <button class="btn buy-btn" data-tour="Alpine Ski Resort" data-price="2499" data-i18n="buy">Buy</button>
+            <button class="btn ghost cart-add" data-tour="Alpine Ski Resort" data-price="2499" data-i18n="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="img" data-src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?q=80&w=1600&auto=format&fit=crop"></div>
+        <div class="body">
+          <h3 data-i18n="northern-lights-expedition">Northern Lights Expedition · Lapland</h3>
+          <p lang="en" data-i18n="northern-lights-description">Glass igloo, husky safari, reindeer farm. Best aurora windows & photographer on site. (2026 season)</p>
+          <span class="price" data-i18n="price-from">from €3,299</span>
+          <div class="buy">
+            <button class="btn buy-btn" data-tour="Northern Lights Expedition" data-price="3299" data-i18n="buy">Buy</button>
+            <button class="btn ghost cart-add" data-tour="Northern Lights Expedition" data-price="3299" data-i18n="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="wellness" id="wellness" lang="en">
+      <h2><span class="gold" data-i18n="olympic-wellness">Olympic Wellness</span> <span data-i18n="programs">Programs</span></h2>
+      <p data-i18n="wellness-description">Performance-inspired recovery designed with spa physicians & sport therapists. Combine <strong data-i18n="cryotherapy">cryotherapy</strong>, <strong data-i18n="thermal-circuits">thermal circuits</strong>, <strong data-i18n="breathwork">breathwork</strong>, and <strong data-i18n="mobility-coaching">mobility coaching</strong> for visible results in 5–7 days. (Available for 2026 tours)</p>
+      <div>
+        <span class="pill" data-i18n="vo2-morning-hike">VO2 Morning Hike</span>
+        <span class="pill" data-i18n="thermal-spa-circuit">Thermal Spa Circuit</span>
+        <span class="pill" data-i18n="lymphatic-massage">Lymphatic Massage</span>
+        <span class="pill" data-i18n="breathwork-cold-plunge">Breathwork & Cold Plunge</span>
+        <span class="pill" data-i18n="sleep-reset">Sleep Reset</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn" href="#pay" data-i18n="add-to-booking">Add to Booking</a>
+        <a class="btn ghost" href="#openBook" data-i18n="ask-specialist">Ask Specialist</a>
+      </div>
+    </section>
+    
+    <!-- Інформація про компанію -->
+    <section class="company-info" lang="en">
+      <h3 data-i18n="about-company">About King House Travel</h3>
+      <p data-i18n="company-description">Founded in 2010, King House Travel specializes in luxury seasonal journeys across Europe's most breathtaking destinations. With over a decade of experience, we curate exclusive winter experiences that combine adventure, relaxation, and cultural immersion. Our expert team ensures every detail of your journey is meticulously planned, from private transfers to 5-star accommodations and unique local experiences. We pride ourselves on creating unforgettable memories for our discerning clientele.</p>
+    </section>
+    
+    <footer lang="en">
+      <span data-i18n="copyright">© 2026 King House Travel. All rights reserved.</span>
+    </footer>
+  </div>
+  <div class="modal" id="bookModal" aria-hidden="true" aria-labelledby="bookTitle" role="dialog">
+    <div class="sheet">
+      <h2 id="bookTitle" data-i18n="book-winter-tour">Book Winter Tour</h2>
+      <p id="tourPicked" style="color:var(--muted)" data-i18n="selected-tour">Selected tour: <b>—</b></p>
+      <form class="form" id="bookForm">
+        <div class="row">
+          <input type="text" name="name" data-i18n-placeholder="full-name" placeholder="Full name" required />
+          <input type="email" name="email" data-i18n-placeholder="email" placeholder="Email" required />
+        </div>
+        <div class="row">
+          <input type="tel" name="phone" data-i18n-placeholder="phone" placeholder="+420…" />
+          <select name="guests" required>
+            <option value="" disabled selected data-i18n="guests">Guests</option>
+            <option>1</option><option>2</option><option>3</option><option>4+</option>
+          </select>
+        </div>
+        <div class="row">
+          <input type="date" name="date" class="full" required />
+        </div>
+        <textarea name="notes" data-i18n-placeholder="preferences" placeholder="Preferences (spa, ski pass, transfers)…"></textarea>
+        <div class="row">
+          <button type="submit" class="btn" data-i18n="send-request">Send Request</button>
+          <button type="button" class="btn ghost" id="closeModal" data-i18n="close">Close</button>
+        </div>
+        <small style="color:var(--muted)" data-i18n="confirm-availability">We'll confirm availability & payment options by email/phone.</small>
+      </form>
+    </div>
+  </div>
+  <div id="pay" class="modal" aria-hidden="true" role="dialog">
+    <div class="sheet">
+      <h2 data-i18n="pay-deposit">Pay / Deposit</h2>
+      <p style="color:var(--muted); margin-bottom:8px" data-i18n="pay-description">Secure your spot with a deposit. Choose Stripe, PayPal, or Crypto (BTC, ETH, USDT). (Demo only — connect keys on your server.)</p>
+      <div class="payrow">
+        <button class="btn" id="stripePay" data-i18n="pay-with-stripe">Pay with Stripe</button>
+        <button class="btn ghost" id="paypalPay" data-i18n="pay-with-paypal">Pay with PayPal</button>
+        <button class="btn ghost" id="cryptoPay" data-i18n="pay-with-crypto">Pay with Crypto</button>
+        <button class="btn ghost" id="closePay" data-i18n="close">Close</button>
+      </div>
+      <small style="display:block; margin-top:10px; color:var(--muted)" data-i18n="payment-backend-info">To go live: create backend endpoints for Stripe (PaymentIntent), PayPal (Order), or Coinbase Commerce (Charge).</small>
+    </div>
+  </div>
+  <div id="cartModal" class="modal" aria-hidden="true" role="dialog">
+    <div class="sheet">
+      <h2 data-i18n="cart">Cart</h2>
+      <p style="color:var(--muted)" data-i18n="cart-description">Your selected tours for Winter 2026</p>
+      <div id="cartItems"></div>
+      <p id="cartTotal" style="color:var(--gold); font-weight:700; margin:12px 0" data-i18n="total">Total: €0</p>
+      <div class="payrow">
+        <button class="btn" id="cartCheckout" data-i18n="checkout">Checkout</button>
+        <button class="btn ghost" id="cartClear" data-i18n="clear-cart">Clear Cart</button>
+        <button class="btn ghost" id="cartClose" data-i18n="close">Close</button>
+      </div>
+    </div>
+  </div>
+  <audio id="bgMusic" loop playsinline preload="auto" muted autoplay>
+    <source src="/kht/Ace Of Base Happy Nation.mp3" type="audio/mpeg">
+  </audio>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <script>
+    // Translation system
+    const translations = {
+      en: {
+        "company-name": "King House Travel",
+        "season-title": "Winter Tours 2026",
+        "buy-winter-tour": "Buy Winter Tour",
+        "music-off": "Music: Off",
+        "music-on": "Music: On",
+        "theme-dark": "Theme: Dark ✨",
+        "theme-light": "Theme: Light ☀",
+        "cart": "Cart",
+        "elite-winter-journeys": "Elite",
+        "winter-journeys-title": "Winter Journeys — Alps, Aurora & Hot Springs",
+        "hero-description": "Glass-clear luxury UI, curated 5★ stays, private transfers, and signature „Olympic Wellness“ programs. Book in one click — multilingual and mobile-first. <strong>Bookings now open for 2026 season!</strong>",
+        "book-now": "Book Now",
+        "explore-tours": "Explore Tours",
+        "alpine-ski-resort": "Alpine Ski Resort · Switzerland",
+        "alpine-ski-description": "Private chalet, concierge, spa & gourmet dining. Perfect carving on world-class pistes. (2026 season)",
+        "northern-lights-expedition": "Northern Lights Expedition · Lapland",
+        "northern-lights-description": "Glass igloo, husky safari, reindeer farm. Best aurora windows & photographer on site. (2026 season)",
+        "price-from": "from €{price}",
+        "buy": "Buy",
+        "add-to-cart": "Add to Cart",
+        "olympic-wellness": "Olympic Wellness",
+        "programs": "Programs",
+        "wellness-description": "Performance-inspired recovery designed with spa physicians & sport therapists. Combine <strong>cryotherapy</strong>, <strong>thermal circuits</strong>, <strong>breathwork</strong>, and <strong>mobility coaching</strong> for visible results in 5–7 days. (Available for 2026 tours)",
+        "cryotherapy": "cryotherapy",
+        "thermal-circuits": "thermal circuits",
+        "breathwork": "breathwork",
+        "mobility-coaching": "mobility coaching",
+        "vo2-morning-hike": "VO2 Morning Hike",
+        "thermal-spa-circuit": "Thermal Spa Circuit",
+        "lymphatic-massage": "Lymphatic Massage",
+        "breathwork-cold-plunge": "Breathwork & Cold Plunge",
+        "sleep-reset": "Sleep Reset",
+        "add-to-booking": "Add to Booking",
+        "ask-specialist": "Ask Specialist",
+        "about-company": "About King House Travel",
+        "company-description": "Founded in 2010, King House Travel specializes in luxury seasonal journeys across Europe's most breathtaking destinations. With over a decade of experience, we curate exclusive winter experiences that combine adventure, relaxation, and cultural immersion. Our expert team ensures every detail of your journey is meticulously planned, from private transfers to 5-star accommodations and unique local experiences. We pride ourselves on creating unforgettable memories for our discerning clientele.",
+        "copyright": "© 2026 King House Travel. All rights reserved.",
+        "book-winter-tour": "Book Winter Tour",
+        "selected-tour": "Selected tour: <b>—</b>",
+        "full-name": "Full name",
+        "email": "Email",
+        "phone": "+420…",
+        "guests": "Guests",
+        "preferences": "Preferences (spa, ski pass, transfers)…",
+        "send-request": "Send Request",
+        "close": "Close",
+        "confirm-availability": "We'll confirm availability & payment options by email/phone.",
+        "pay-deposit": "Pay / Deposit",
+        "pay-description": "Secure your spot with a deposit. Choose Stripe, PayPal, or Crypto (BTC, ETH, USDT). (Demo only — connect keys on your server.)",
+        "pay-with-stripe": "Pay with Stripe",
+        "pay-with-paypal": "Pay with PayPal",
+        "pay-with-crypto": "Pay with Crypto",
+        "payment-backend-info": "To go live: create backend endpoints for Stripe (PaymentIntent), PayPal (Order), or Coinbase Commerce (Charge).",
+        "cart-description": "Your selected tours for Winter 2026",
+        "total": "Total: €{total}",
+        "checkout": "Checkout",
+        "clear-cart": "Clear Cart",
+        "lang-en": "English",
+        "lang-cs": "Czech",
+        "lang-it": "Italian"
+      },
+      cs: {
+        "company-name": "King House Travel",
+        "season-title": "Zimní zájezdy 2026",
+        "buy-winter-tour": "Koupit zimní zájezd",
+        "music-off": "Hudba: Vyp",
+        "music-on": "Hudba: Zap",
+        "theme-dark": "Téma: Tmavé ✨",
+        "theme-light": "Téma: Světlé ☀",
+        "cart": "Košík",
+        "elite-winter-journeys": "Exkluzivní",
+        "winter-journeys-title": "Zimní cesty — Alpy, Aurora & Horké prameny",
+        "hero-description": "Průhledný luxusní UI, kurátorské 5★ pobyty, soukromé transfery a podpisové programy „Olympijské wellness“. Rezervujte jedním kliknutím — vícejazyčné a pro mobilní zařízení. <strong>Rezervace pro sezónu 2026 již otevřeny!</strong>",
+        "book-now": "Rezervovat nyní",
+        "explore-tours": "Prozkoumat zájezdy",
+        "alpine-ski-resort": "Alpské lyžařské středisko · Švýcarsko",
+        "alpine-ski-description": "Soukromá chalet, concierge, lázně & gurmánská jídla. Perfektní carving na světových sjezdovkách. (sezóna 2026)",
+        "northern-lights-expedition": "Expedice severních světla · Laponsko",
+        "northern-lights-description": "Skleněné iglú, safári s huskymi, farma se soby. Nejlepší okna pro auroru a fotograf na místě. (sezóna 2026)",
+        "price-from": "od €{price}",
+        "buy": "Koupit",
+        "add-to-cart": "Přidat do košíku",
+        "olympic-wellness": "Olympijské wellness",
+        "programs": "Programy",
+        "wellness-description": "Výkonem inspirovaná regenerace navržená s lázeňskými lékaři a sportovními terapeuty. Kombinujte <strong>kryoterapii</strong>, <strong>termální okruhy</strong>, <strong>dýchání</strong> a <strong>mobilizační trénink</strong> pro viditelné výsledky za 5–7 dní. (K dispozici pro zájezdy 2026)",
+        "cryotherapy": "kryoterapie",
+        "thermal-circuits": "termální okruhy",
+        "breathwork": "dýchání",
+        "mobility-coaching": "mobilizační trénink",
+        "vo2-morning-hike": "Ranní túra VO2",
+        "thermal-spa-circuit": "Termální lázeňský okruh",
+        "lymphatic-massage": "Lymfatická masáž",
+        "breathwork-cold-plunge": "Dýchání & studený ponor",
+        "sleep-reset": "Reset spánku",
+        "add-to-booking": "Přidat k rezervaci",
+        "ask-specialist": "Zeptat se specialisty",
+        "about-company": "O společnosti King House Travel",
+        "company-description": "Založena v roce 2010, King House Travel se specializuje na luxusní sezónní cesty po nejúchvatnějších destinacích Evropy. S více než desetiletými zkušenostmi vytváříme exkluzivní zimní zážitky, které kombinují dobrodružství, relaxaci a kulturní zážitky. Náš expertní tým zajistí, že každý detail vaší cesty je pečlivě naplánován, od soukromých transferů po 5hvězdičkové ubytování a jedinečné místní zážitky. Hrdíme se na vytváření nezapomenutelných vzpomínek pro naše náročné klienty.",
+        "copyright": "© 2026 King House Travel. Všechna práva vyhrazena.",
+        "book-winter-tour": "Rezervovat zimní zájezd",
+        "selected-tour": "Vybraný zájezd: <b>—</b>",
+        "full-name": "Celé jméno",
+        "email": "E-mail",
+        "phone": "+420…",
+        "guests": "Hosté",
+        "preferences": "Preference (lázně, skipas, transfery)…",
+        "send-request": "Odeslat požadavek",
+        "close": "Zavřít",
+        "confirm-availability": "Potvrdíme dostupnost a platební možnosti e-mailem/telefonem.",
+        "pay-deposit": "Zaplatit / Záloha",
+        "pay-description": "Zajistěte si místo zálohou. Vyberte si Stripe, PayPal nebo Krypto (BTC, ETH, USDT). (Pouze demo — připojte klíče na svém serveru.)",
+        "pay-with-stripe": "Zaplatit přes Stripe",
+        "pay-with-paypal": "Zaplatit přes PayPal",
+        "pay-with-crypto": "Zaplatit kryptoměnou",
+        "payment-backend-info": "Pro spuštění: vytvořte backend endpointy pro Stripe (PaymentIntent), PayPal (Order) nebo Coinbase Commerce (Charge).",
+        "cart-description": "Vaše vybrané zájezdy pro zimu 2026",
+        "total": "Celkem: €{total}",
+        "checkout": "Pokladna",
+        "clear-cart": "Vyprázdnit košík",
+        "lang-en": "Angličtina",
+        "lang-cs": "Čeština",
+        "lang-it": "Italština"
+      },
+      it: {
+        "company-name": "King House Travel",
+        "season-title": "Tour Invernali 2026",
+        "buy-winter-tour": "Acquista Tour Invernale",
+        "music-off": "Musica: Off",
+        "music-on": "Musica: On",
+        "theme-dark": "Tema: Scuro ✨",
+        "theme-light": "Tema: Chiaro ☀",
+        "cart": "Carrello",
+        "elite-winter-journeys": "Elite",
+        "winter-journeys-title": "Viaggi Invernali — Alpi, Aurora & Acque Termali",
+        "hero-description": "UI di lusso trasparente, soggiorni curati 5★, trasferimenti privati e programmi di firma „Olympic Wellness“. Prenota con un clic — multilingue e mobile-first. <strong>Prenotazioni aperte per la stagione 2026!</strong>",
+        "book-now": "Prenota Ora",
+        "explore-tours": "Esplora Tour",
+        "alpine-ski-resort": "Stazione Sciistica Alpina · Svizzera",
+        "alpine-ski-description": "Chalet privato, concierge, spa & dining gourmet. Perfetta carving su piste di classe mondiale. (stagione 2026)",
+        "northern-lights-expedition": "Spedizione Aurora Boreale · Lapponia",
+        "northern-lights-description": "Iglu di vetro, safari con husky, fattoria di renne. Migliori finestre per l'aurora e fotografo sul posto. (stagione 2026)",
+        "price-from": "da €{price}",
+        "buy": "Acquista",
+        "add-to-cart": "Aggiungi al Carrello",
+        "olympic-wellness": "Wellness Olimpico",
+        "programs": "Programmi",
+        "wellness-description": "Recupero ispirato alle prestazioni progettato con medici termali e terapisti sportivi. Combina <strong>crioterapia</strong>, <strong>circuiti termali</strong>, <strong>respirazione</strong> e <strong>allenamento della mobilità</strong> per risultati visibili in 5–7 giorni. (Disponibile per i tour 2026)",
+        "cryotherapy": "crioterapia",
+        "thermal-circuits": "circuiti termali",
+        "breathwork": "respirazione",
+        "mobility-coaching": "allenamento della mobilità",
+        "vo2-morning-hike": "Escursione Mattutina VO2",
+        "thermal-spa-circuit": "Circuito Termale Spa",
+        "lymphatic-massage": "Massaggio Linfatico",
+        "breathwork-cold-plunge": "Respirazione & Immersione Fredda",
+        "sleep-reset": "Reset del Sonno",
+        "add-to-booking": "Aggiungi alla Prenotazione",
+        "ask-specialist": "Chiedi a uno Specialista",
+        "about-company": "Informazioni su King House Travel",
+        "company-description": "Fondata nel 2010, King House Travel si specializza in viaggi stagionali di lusso attraverso le destinazioni più mozzafiato d'Europa. Con oltre un decennio di esperienza, creiamo esperienze invernali esclusive che combinano avventura, relax e immersione culturale. Il nostro team di esperti assicura che ogni dettaglio del tuo viaggio sia meticolosamente pianificato, dai trasferimenti privati agli alloggi 5 stelle ed esperienze locali uniche. Ci vantiamo di creare ricordi indimenticabili per la nostra esigente clientela.",
+        "copyright": "© 2026 King House Travel. Tutti i diritti riservati.",
+        "book-winter-tour": "Prenota Tour Invernale",
+        "selected-tour": "Tour selezionato: <b>—</b>",
+        "full-name": "Nome completo",
+        "email": "Email",
+        "phone": "+420…",
+        "guests": "Ospiti",
+        "preferences": "Preferenze (spa, skipass, trasferimenti)…",
+        "send-request": "Invia Richiesta",
+        "close": "Chiudi",
+        "confirm-availability": "Confermeremo disponibilità e opzioni di pagamento tramite email/telefono.",
+        "pay-deposit": "Paga / Acconto",
+        "pay-description": "Assicura il tuo posto con un acconto. Scegli Stripe, PayPal o Crypto (BTC, ETH, USDT). (Solo demo — connetti le chiavi sul tuo server.)",
+        "pay-with-stripe": "Paga con Stripe",
+        "pay-with-paypal": "Paga con PayPal",
+        "pay-with-crypto": "Paga con Crypto",
+        "payment-backend-info": "Per andare online: crea endpoint di backend per Stripe (PaymentIntent), PayPal (Order) o Coinbase Commerce (Charge).",
+        "cart-description": "I tuoi tour selezionati per l'Inverno 2026",
+        "total": "Totale: €{total}",
+        "checkout": "Cassa",
+        "clear-cart": "Svuota Carrello",
+        "lang-en": "Inglese",
+        "lang-cs": "Ceco",
+        "lang-it": "Italiano"
+      }
+    };
+    
+    // Language switching functionality
+    let currentLanguage = localStorage.getItem('kht_language') || 'en';
+    
+    function changeLanguage(lang) {
+      currentLanguage = lang;
+      localStorage.setItem('kht_language', lang);
+      
+      // Update language button
+      const languageBtn = document.getElementById('languageBtn');
+      const currentFlag = document.getElementById('currentFlag');
+      const currentLang = document.getElementById('currentLang');
+      
+      // Set flag and language code
+      if (lang === 'en') {
+        currentFlag.textContent = '🇬🇧';
+        currentLang.textContent = 'EN';
+      } else if (lang === 'cs') {
+        currentFlag.textContent = '🇨🇿';
+        currentLang.textContent = 'CS';
+      } else if (lang === 'it') {
+        currentFlag.textContent = '🇮🇹';
+        currentLang.textContent = 'IT';
+      }
+      
+      // Update active language in dropdown
+      document.querySelectorAll('.language-option').forEach(option => {
+        if (option.dataset.lang === lang) {
+          option.classList.add('active');
+        } else {
+          option.classList.remove('active');
+        }
+      });
+      
+      // Update all translatable elements
+      document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          // Handle special cases with dynamic content
+          if (key === 'price-from' || key === 'total') {
+            const priceMatch = element.textContent.match(/€(\d+)/);
+            if (priceMatch) {
+              element.textContent = translations[lang][key].replace('{price}', priceMatch[1]).replace('{total}', priceMatch[1]);
+            }
+          } else if (key === 'selected-tour') {
+            const tourName = element.querySelector('b').textContent;
+            element.innerHTML = translations[lang][key].replace('—', tourName);
+          } else {
+            element.innerHTML = translations[lang][key];
+          }
+        }
+      });
+      
+      // Update placeholders
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+          element.placeholder = translations[lang][key];
+        }
+      });
+      
+      // Update document lang attribute
+      document.documentElement.lang = lang;
+      
+      // Close dropdown
+      document.getElementById('languageDropdown').classList.remove('active');
+      languageBtn.setAttribute('aria-expanded', 'false');
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      window.lenis = new Lenis({ duration: 1.2, smooth: true, smoothTouch: false });
+      function raf(t){ window.lenis.raf(t); requestAnimationFrame(raf) }
+      requestAnimationFrame(raf);
+      
+      // Initialize language
+      changeLanguage(currentLanguage);
+      
+      // Set up language selector
+      const languageBtn = document.getElementById('languageBtn');
+      const languageDropdown = document.getElementById('languageDropdown');
+      
+      languageBtn.addEventListener('click', () => {
+        const isExpanded = languageBtn.getAttribute('aria-expanded') === 'true';
+        languageBtn.setAttribute('aria-expanded', !isExpanded);
+        languageDropdown.classList.toggle('active');
+      });
+      
+      // Close dropdown when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.language-selector')) {
+          languageDropdown.classList.remove('active');
+          languageBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Handle language option clicks
+      document.querySelectorAll('.language-option').forEach(option => {
+        option.addEventListener('click', () => {
+          changeLanguage(option.dataset.lang);
+        });
+      });
+      
+      // Lazy load images
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(entries=>{
+          entries.forEach(e=>{
+            if(!e.isIntersecting) return;
+            const el=e.target, src=el.getAttribute('data-src');
+            if(src){ el.style.backgroundImage = `url('${src}')`; io.unobserve(el); }
+          });
+        }, {rootMargin:'200px 0px'});
+        document.querySelectorAll('.card .img[data-src]').forEach(el=>io.observe(el));
+      } else {
+        // Fallback for browsers without IntersectionObserver
+        document.querySelectorAll('.card .img[data-src]').forEach(el => {
+          const src = el.getAttribute('data-src');
+          if(src) el.style.backgroundImage = `url('${src}')`;
+        });
+      }
+      
+      // Ensure video covers entire screen
+      function adjustVideoSize() {
+        const video = document.querySelector('.video-bg video');
+        if (!video) return;
+        
+        const updateSize = () => {
+          const vw = window.innerWidth;
+          const vh = window.innerHeight;
+          
+          // Apply dimensions to cover entire viewport
+          video.style.width = `${vw}px`;
+          video.style.height = `${vh}px`;
+          video.style.minWidth = '100%';
+          video.style.minHeight = '100%';
+        };
+        
+        updateSize();
+        window.addEventListener('resize', updateSize);
+      }
+      
+      adjustVideoSize();
+    });
+    
+    (function ensureMusic() {
+      const music = document.getElementById('bgMusic');
+      const musicBtn = document.getElementById('musicBtn');
+      music.volume = 0.5;
+      function updateMusicBtn(){
+        const on = !music.muted && !music.paused;
+        const lang = currentLanguage;
+        const musicText = on ? 'music-on' : 'music-off';
+        musicBtn.textContent = translations[lang][musicText];
+        musicBtn.setAttribute('aria-pressed', String(on));
+      }
+      function tryUnmutePlay(){
+        try {
+          music.play().then(() => {
+            music.muted = false;
+            updateMusicBtn();
+            window.removeEventListener('click', tryUnmutePlay, true);
+            window.removeEventListener('touchstart', tryUnmutePlay, true);
+          }).catch(err => console.warn('Music play failed:', err));
+        } catch (err) { console.warn('Music init failed:', err); }
+      }
+      window.addEventListener('click', tryUnmutePlay, true);
+      window.addEventListener('touchstart', tryUnmutePlay, true);
+      musicBtn.addEventListener('click', async () => {
+        try {
+          if(music.paused){ await music.play(); music.muted = false; }
+          else{ music.muted = !music.muted; }
+          updateMusicBtn();
+        } catch (err) { console.warn('Music toggle failed:', err); }
+      });
+      document.addEventListener('visibilitychange', () => {
+        if(document.hidden) { music.pause(); music.muted = true; }
+        updateMusicBtn();
+      });
+      updateMusicBtn();
+    })();
+    
+    document.addEventListener('visibilitychange', () => {
+      const video = document.querySelector('.video-bg video');
+      if (document.hidden) {
+        video.pause();
+      } else {
+        video.play().catch(e => console.log("Video play failed:", e));
+      }
+    });
+    
+    const starfield = document.getElementById('starfield');
+    function makeStars(n=160){
+      starfield.innerHTML = '';
+      for(let i=0;i<n;i++){
+        const st = document.createElement('div');
+        st.className = 'star';
+        st.style.left = Math.random()*100 + 'vw';
+        st.style.top  = Math.random()*100 + 'vh';
+        st.style.opacity = (0.4 + Math.random()*0.6).toFixed(2);
+        starfield.appendChild(st);
+      }
+    }
+  
+    
+    // Focus trap for modals
+    function trapFocus(modal) {
+      const focusables = modal.querySelectorAll('a,button,input,select,textarea,[tabindex]:not([tabindex="-1"])');
+      if (!focusables.length) return;
+      
+      const first = focusables[0], last = focusables[focusables.length-1];
+      
+      modal.addEventListener('keydown', function trapHandler(e) {
+        if(e.key !== 'Tab') return;
+        
+        if(e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if(!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      });
+      
+      // Focus first element
+      first.focus();
+    }
+    
+    const modal = document.getElementById('bookModal');
+    const tourPicked = document.getElementById('tourPicked').querySelector('b');
+    function openModal(tour){ 
+      tourPicked.textContent = tour || '—'; 
+      modal.classList.add('open'); 
+      modal.setAttribute('aria-hidden','false'); 
+      document.body.style.overflow = 'hidden'; 
+      if (window.lenis) window.lenis.stop();
+      trapFocus(modal);
+    }
+    function closeModal(){ 
+      modal.classList.remove('open'); 
+      modal.setAttribute('aria-hidden','true'); 
+      document.body.style.overflow = ''; 
+      if (window.lenis) window.lenis.start(); 
+    }
+    document.getElementById('openBook').addEventListener('click', ()=>openModal());
+    document.getElementById('heroBook').addEventListener('click', ()=>openModal(translations[currentLanguage]['featured-winter-journey'] || 'Featured Winter Journey'));
+    document.getElementById('closeModal').addEventListener('click', closeModal);
+    modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal() });
+    document.querySelectorAll('.buy .buy-btn').forEach(btn=> btn.addEventListener('click', ()=> openModal(btn.dataset.tour)));
+    document.getElementById('bookForm').addEventListener('submit', (e)=>{ 
+      e.preventDefault(); 
+      const successMsg = currentLanguage === 'en' ? 'Thank you! We will contact you to finalize your booking.' :
+                          currentLanguage === 'cs' ? 'Děkujeme! Budeme Vás kontaktovat pro dokončení rezervace.' :
+                          'Grazie! Ti contatteremo per finalizzare la prenotazione.';
+      alert(successMsg); 
+      closeModal(); 
+      e.target.reset(); 
+    });
+    
+    const payModal = document.getElementById('pay');
+    function openPay(){ 
+      payModal.classList.add('open'); 
+      payModal.setAttribute('aria-hidden','false'); 
+      document.body.style.overflow = 'hidden'; 
+      if (window.lenis) window.lenis.stop();
+      trapFocus(payModal);
+    }
+    function closePay(){ 
+      payModal.classList.remove('open'); 
+      payModal.setAttribute('aria-hidden','true'); 
+      document.body.style.overflow = ''; 
+      if (window.lenis) window.lenis.start(); 
+    }
+    document.querySelectorAll('[href="#pay"]').forEach(a=>a.addEventListener('click', (e)=>{ e.preventDefault(); openPay() }));
+    document.getElementById('closePay').addEventListener('click', closePay);
+    document.getElementById('stripePay').addEventListener('click', async ()=>{
+      const alertMsg = currentLanguage === 'en' ? 'Stripe demo: call your backend /create-checkout-session and redirect to session.url' :
+                      currentLanguage === 'cs' ? 'Stripe demo: volejte svůj backend /create-checkout-session a přesměrujte na session.url' :
+                      'Demo Stripe: chiama il tuo backend /create-checkout-session e reindirizza a session.url';
+      alert(alertMsg);
+    });
+    document.getElementById('paypalPay').addEventListener('click', async ()=>{
+      const alertMsg = currentLanguage === 'en' ? 'PayPal demo: call your backend /create-order and redirect to approve link' :
+                      currentLanguage === 'cs' ? 'PayPal demo: volejte svůj backend /create-order a přesměrujte na approve link' :
+                      'Demo PayPal: chiama il tuo backend /create-order e reindirizza al link di approvazione';
+      alert(alertMsg);
+    });
+    document.getElementById('cryptoPay').addEventListener('click', async ()=>{
+      const alertMsg = currentLanguage === 'en' ? 'Crypto demo: call your backend /create-charge (Coinbase Commerce) and redirect to hosted_url' :
+                      currentLanguage === 'cs' ? 'Crypto demo: volejte svůj backend /create-charge (Coinbase Commerce) a přesměrujte na hosted_url' :
+                      'Demo Crypto: chiama il tuo backend /create-charge (Coinbase Commerce) e reindirizza a hosted_url';
+      alert(alertMsg);
+    });
+    
+    const cartModal = document.getElementById('cartModal');
+    const cartItems = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+    const cartCount = document.getElementById('cartCount');
+    let cart = JSON.parse(localStorage.getItem('kht_cart') || '[]');
+    
+    // Cart event delegation
+    cartItems.addEventListener('input', (e) => {
+      const el = e.target;
+      if (el.matches('input[type=number][data-i]')) {
+        const i = Number(el.dataset.i);
+        cart[i].guests = Math.max(1, Number(el.value) || 1);
+        updateCart();
+      }
+    });
+    
+    cartItems.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-remove]');
+      if (!btn) return;
+      cart.splice(Number(btn.dataset.remove), 1);
+      updateCart();
+    });
+    
+    function updateCart(){
+      const removeText = translations[currentLanguage]['remove'] || 'Remove';
+      cartItems.innerHTML = cart.length ? cart.map((item, i) => `
+        <div class="cart-item">
+          <strong>${item.tour}</strong> — €${item.price}
+          × <input type="number" min="1" value="${item.guests}" data-i="${i}" style="width:60px">
+          <button class="btn ghost" data-remove="${i}">${removeText}</button>
+        </div>
+      `).join('') : `<p style="color:var(--muted)">${translations[currentLanguage]['cart-empty'] || 'Cart is empty'}</p>`;
+      
+      const total = cart.reduce((sum, item) => sum + item.price * item.guests, 0);
+      const totalText = translations[currentLanguage]['total'] || 'Total: €{total}';
+      cartTotal.innerHTML = totalText.replace('{total}', new Intl.NumberFormat('en-US', {style:'currency', currency:'EUR'}).format(total));
+      
+      // Show total guests instead of items
+      const totalGuests = cart.reduce((sum, item) => sum + (item.guests || 1), 0);
+      cartCount.textContent = totalGuests;
+      
+      localStorage.setItem('kht_cart', JSON.stringify(cart));
+    }
+    
+    function addToCart(tour, price){
+      cart.push({ tour, price: Number(price), guests: 1 });
+      updateCart();
+      openCart();
+    }
+    
+    function openCart(){
+      cartModal.classList.add('open');
+      cartModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (window.lenis) window.lenis.stop();
+      trapFocus(cartModal);
+    }
+    
+    function closeCart(){
+      cartModal.classList.remove('open');
+      cartModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (window.lenis) window.lenis.start();
+    }
+    
+    document.getElementById('cartBtn').addEventListener('click', openCart);
+    document.getElementById('cartClose').addEventListener('click', closeCart);
+    document.getElementById('cartClear').addEventListener('click', () => { cart = []; updateCart(); });
+    document.getElementById('cartCheckout').addEventListener('click', () => { if (cart.length) openPay(); });
+    cartModal.addEventListener('click', (e) => { if (e.target === cartModal) closeCart(); });
+    document.querySelectorAll('.cart-add').forEach(btn => btn.addEventListener('click', () => addToCart(btn.dataset.tour, btn.dataset.price)));
+    updateCart();
+    
+    const themeBtn = document.getElementById('themeBtn');
+    // Встановлюємо темну тему за замовчуванням
+    let isLightTheme = localStorage.getItem('kht_theme') === 'light';
+    
+    function syncStars() {
+      document.getElementById('starfield').style.opacity =
+        document.body.classList.contains('light-theme') ? '0' : '1';
+    }
+    
+    function setTheme(){
+      if(isLightTheme){
+        document.body.classList.add('light-theme');
+        document.body.classList.remove('night-sky');
+        themeBtn.textContent = translations[currentLanguage]['theme-light'] || 'Theme: Light ☀';
+      }else{
+        document.body.classList.remove('light-theme');
+        document.body.classList.add('night-sky');
+        themeBtn.textContent = translations[currentLanguage]['theme-dark'] || 'Theme: Dark ✨';
+      }
+      localStorage.setItem('kht_theme', isLightTheme ? 'light' : 'dark');
+      syncStars();
+    }
+    
+    themeBtn.addEventListener('click', () => { isLightTheme = !isLightTheme; setTheme(); });
+    setTheme();
+    
+    // Cursor trail - optimized version
+    const MAX = 16;
+    const trail = [];
+    
+    // Only create cursor trail on devices with fine pointer
+    if (window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
+      for(let i = 0; i < MAX; i++) {
+        const d = document.createElement('div');
+        d.className = 'cursor-dot';
+        document.body.appendChild(d);
+        trail.push(d);
+      }
+      
+      window.addEventListener('mousemove', e => {
+        trail.forEach((el, i) => {
+          const s = 1 - i / MAX;
+          el.style.transform = `translate(${e.clientX}px, ${e.clientY}px) scale(${Math.max(.4, s)})`;
+          el.style.opacity = (0.4 + (1 - i / MAX) * 0.6).toFixed(2);
+        });
+      });
+    }
+  </script>
+  <button class="chat-launcher" id="chatLaunch" aria-expanded="false" aria-label="Open support chat" data-i18n="chat-help">Chat • Help</button>
+  <aside class="chatbox" id="chatBox" role="dialog" aria-label="KHT Assistant">
+    <div class="chat-header">
+      <div class="ttl">
+        <span data-i18n="kht-assistant">KHT Assistant</span> 
+        <small data-i18n="booking-wellness">Booking & Wellness</small>
+      </div>
+      <div>
+        <button class="btn ghost" id="chatMin" aria-label="Minimize chat">—</button>
+        <button class="btn" id="chatClose" aria-label="Close chat">×</button>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatLog"></div>
+    <div class="chipbar" id="chipbar">
+      <span class="chip" data-q="price" data-i18n="prices">Prices</span>
+      <span class="chip" data-q="wellness" data-i18n="olympic-wellness">Olympic Wellness</span>
+      <span class="chip" data-q="pay" data-i18n="pay-deposit">Pay / Deposit</span>
+      <span class="chip" data-q="book" data-i18n="book-now">Book now</span>
+      <span class="chip" data-q="contact" data-i18n="contact-agent">Contact agent</span>
+    </div>
+    <div class="chat-input">
+      <input id="chatField" type="text" data-i18n-placeholder="type-message" placeholder="Type your message… / Napište zprávu… / Напишіть…" />
+      <button class="btn" id="chatSend" data-i18n="send">Send</button>
+    </div>
+  </aside>
+  <script>
+    const chatLaunch = document.getElementById('chatLaunch');
+    const chatBox = document.getElementById('chatBox');
+    const chatLog = document.getElementById('chatLog');
+    const chatField = document.getElementById('chatField');
+    const chatSend = document.getElementById('chatSend');
+    const chatClose = document.getElementById('chatClose');
+    const chatMin = document.getElementById('chatMin');
+    const chipbar = document.getElementById('chipbar');
+    
+    let chatLastFocus = null;
+    
+    function openChat(){ 
+      chatLastFocus = document.activeElement;
+      chatBox.classList.add('open'); 
+      chatBox.setAttribute('aria-hidden','false');
+      chatLaunch.setAttribute('aria-expanded','true'); 
+      saveOpen(true); 
+      if(!sessionStorage.getItem('kht_init')) { 
+        botGreeting(); 
+        sessionStorage.setItem('kht_init','1'); 
+      } 
+    }
+    
+    function closeChat(){ 
+      chatBox.classList.remove('open'); 
+      chatBox.setAttribute('aria-hidden','true');
+      chatLaunch.setAttribute('aria-expanded','false'); 
+      saveOpen(false);
+      if (chatLastFocus) chatLastFocus.focus();
+    }
+    
+    chatLaunch.addEventListener('click', ()=> chatBox.classList.contains('open')? closeChat(): openChat());
+    chatClose.addEventListener('click', closeChat);
+    chatMin.addEventListener('click', ()=> chatBox.classList.toggle('open'));
+    
+    function addMsg(role, text){
+      const m = document.createElement('div');
+      m.className = 'msg ' + role;
+      m.innerHTML = text;
+      chatLog.appendChild(m);
+      chatLog.scrollTop = chatLog.scrollHeight;
+      persist();
+    }
+    
+    function typing(on=true){
+      let t = document.getElementById('typing');
+      if(on){ if(t) return; t = document.createElement('div'); t.id='typing'; t.className='msg bot typing'; t.innerHTML='<span class="dot"></span><span class="dot"></span><span class="dot"></span>'; chatLog.appendChild(t); chatLog.scrollTop = chatLog.scrollHeight; }
+      else if(t){ t.remove(); }
+    }
+    
+    function botGreeting(){
+      let greetingText, tipText;
+      
+      if (currentLanguage === 'cs') {
+        greetingText = '<b>Vítejte v King House Travel!</b><br/>Jak vám mohu pomoci? — <i>Ceny</i>, <i>Olympijské wellness</i>, <i>Platba</i>, <i>Rezervace</i>, <i>Kontakt</i>.';
+        tipText = '<small>Tip: Použijte tlačítko Jazyk v záhlaví pro jakýkoli jazyk.</small>';
+      } else if (currentLanguage === 'it') {
+        greetingText = '<b>Benvenuto in King House Travel!</b><br/>Come posso aiutarti? — <i>Prezzi</i>, <i>Wellness Olimpico</i>, <i>Pagamento</i>, <i>Prenota</i>, <i>Contatto</i>.';
+        tipText = '<small>Suggerimento: Usa il pulsante Lingua nell\'intestazione per qualsiasi lingua.</small>';
+      } else {
+        greetingText = '<b>Welcome to King House Travel!</b><br/>How can I help? — <i>Prices</i>, <i>Olympic Wellness</i>, <i>Pay</i>, <i>Book</i>, <i>Contact</i>.';
+        tipText = '<small>Tip: Use the Translate button in the header for any language.</small>';
+      }
+      
+      addMsg('bot', greetingText + '<br/>' + tipText);
+    }
+    
+    function handleUser(text){
+      addMsg('user', escapeHTML(text));
+      typing(true);
+      setTimeout(()=>{ typing(false); route(text); }, 600);
+    }
+    
+    function route(t){
+      const s = t.toLowerCase();
+      if(/price|цен|цiн|cena|prezzo/.test(s)) return replyPrice();
+      if(/wellness|оздоров|здоров|láze|spa|benessere/.test(s)) return replyWellness();
+      if(/pay|оплат|stripe|paypal|deposit|задат|передоплат|crypto|крипт|pagamento|acconto/.test(s)) return replyPay();
+      if(/book|брон|заказ|rezerv|prenot/.test(s)) return replyBook();
+      if(/human|agent|manager|контакт|агент|оператор|консульт|contatto|assistente/.test(s)) return replyContact();
+      
+      let helpText;
+      if (currentLanguage === 'cs') {
+        helpText = 'Zde je, co mohu udělat:<br>• Zobrazit <b>ceny</b> a typické služby zahrnuté v ceně<br>• Vysvětlit programy <b>Olympijského wellness</b><br>• Spustit <b>Platbu / Zálohu</b> (Stripe/PayPal/Crypto)<br>• Otevřít <b>rezervační formulář</b><br>• Spojit vás s <b>lidským agentem</b>.';
+      } else if (currentLanguage === 'it') {
+        helpText = 'Ecco cosa posso fare:<br>• Mostrare <b>prezzi</b> e servizi tipici inclusi<br>• Spiegare i programmi <b>Wellness Olimpico</b><br>• Avviare <b>Pagamento / Acconto</b> (Stripe/PayPal/Crypto)<br>• Aprire il <b>modulo di prenotazione</b><br>• Metterti in contatto con un <b>agente umano</b>.';
+      } else {
+        helpText = 'Here is what I can do:<br>• Show <b>prices</b> and typical inclusions<br>• Explain <b>Olympic Wellness</b> programs<br>• Start <b>Pay / Deposit</b> (Stripe/PayPal/Crypto)<br>• Open the <b>booking form</b><br>• Connect you with a <b>human agent</b>.';
+      }
+      
+      addMsg('bot', helpText);
+    }
+    
+    function replyPrice(){
+      let priceText;
+      if (currentLanguage === 'cs') {
+        priceText = `Typická cenová hladina na osobu:<ul><li>Alpské lyžování: <b>€2,499–€5,900</b> (5★, lázně, transfery)</li><li>Aurora v Laponsku: <b>€3,299–€6,200</b> (skleněné iglú, aktivity)</li><li>Ledový hotel: <b>€1,899–€3,500</b></li><li>Vánoční trhy: <b>€1,299–€2,200</b></li></ul><small>Přesná nabídka po termínech/hostech. Chcete, abych otevřel rezervační formulář?</small>`;
+      } else if (currentLanguage === 'it') {
+        priceText = `Fascia di prezzo tipica a persona:<ul><li>Sci Alpino: <b>€2,499–€5,900</b> (5★, spa, trasferimenti)</li><li>Aurora in Lapponia: <b>€3,299–€6,200</b> (igloo di vetro, attività)</li><li>Hotel di Ghiaccio: <b>€1,899–€3,500</b></li><li>Mercati di Natale: <b>€1,299–€2,200</b></li></ul><small>Offerta esatta dopo date/ospiti. Vuoi che apra il modulo di prenotazione?</small>`;
+      } else {
+        priceText = `Typical price range per person:<ul><li>Alpine Ski: <b>€2,499–€5,900</b> (5★, spa, transfers)</li><li>Aurora Lapland: <b>€3,299–€6,200</b> (glass igloo, activities)</li><li>Ice Hotel: <b>€1,899–€3,500</b></li><li>Christmas Markets: <b>€1,299–€2,200</b></li></ul><small>Exact offer after dates/guests. Want me to open the booking form?</small>`;
+      }
+      addMsg('bot', priceText);
+    }
+    
+    function replyWellness(){
+      let wellnessText, addWellnessText;
+      if (currentLanguage === 'cs') {
+        wellnessText = `<b>Olympijské wellness</b> kombinuje kryoterapii, termální okruhy, dýchání, mobilizaci a reset spánku. Standardní modul trvá 5–7 dní. Můžete si ho přidat k jakémukoli zájezdu jedním kliknutím.`;
+        addWellnessText = 'Přidat Wellness';
+      } else if (currentLanguage === 'it') {
+        wellnessText = `<b>Wellness Olimpico</b> combina crioterapia, circuiti termali, respirazione, mobilità e reset del sonno. Il modulo standard dura 5–7 giorni. Puoi aggiungerlo a qualsiasi tour con un clic.`;
+        addWellnessText = 'Aggiungi Wellness';
+      } else {
+        wellnessText = `<b>Olympic Wellness</b> combines cryotherapy, thermal circuits, breathwork, mobility & sleep reset. Standard module is 5–7 days. You can add it to any tour in one click.`;
+        addWellnessText = 'Add Wellness';
+      }
+      addMsg('bot', wellnessText + `<br><button class='btn' onclick="document.querySelector('#wellness .btn').click()">${addWellnessText}</button>`);
+    }
+    
+    function replyPay(){
+      let payText, openPayText;
+      if (currentLanguage === 'cs') {
+        payText = `Můžete si zajistit termíny <b>zálohou</b>. Vyberte si <b>Stripe</b>, <b>PayPal</b> nebo <b>Krypto (BTC, ETH, USDT)</b>.`;
+        openPayText = 'Otevřít Platbu / Zálohu';
+      } else if (currentLanguage === 'it') {
+        payText = `Puoi assicurare le date con un <b>acconto</b>. Scegli <b>Stripe</b>, <b>PayPal</b> o <b>Crypto (BTC, ETH, USDT)</b>.`;
+        openPayText = 'Apri Pagamento / Acconto';
+      } else {
+        payText = `You can secure dates with a <b>deposit</b>. Choose <b>Stripe</b>, <b>PayPal</b>, or <b>Crypto (BTC, ETH, USDT)</b>.`;
+        openPayText = 'Open Pay / Deposit';
+      }
+      addMsg('bot', payText + `<br><button class='btn' onclick="(function(){const a=document.querySelector('[href=\'#pay\']'); if(a){a.click()} })()">${openPayText}</button><br><small>Note: Live payments need backend keys (demo here).</small>`);
+    }
+    
+    function replyBook(){
+      let bookText, formText;
+      if (currentLanguage === 'cs') {
+        bookText = 'Skvěle! Otevřu <b>rezervační formulář</b>. Prosím, vyplňte jméno, e-mail, termíny a hosté.';
+        formText = 'Rezervační formulář';
+      } else if (currentLanguage === 'it') {
+        bookText = 'Ottimo! Aprirò il <b>modulo di prenotazione</b>. Per favore compila nome, email, date e ospiti.';
+        formText = 'Modulo di prenotazione';
+      } else {
+        bookText = 'Great! I will open the <b>booking form</b>. Please fill name, email, dates & guests.';
+        formText = 'booking form';
+      }
+      addMsg('bot', bookText);
+      setTimeout(()=>{ const el = document.getElementById('openBook'); if(el) el.click(); }, 300);
+    }
+    
+    function replyContact(){
+      let contactText;
+      if (currentLanguage === 'cs') {
+        contactText = `Zde sdílejte svůj e-mail/telefon a předám ho manažerovi. Nebo napište na <b>booking@kinghousetravel.example</b>. <br><small>(Nahraďte svou skutečnou adresou.)</small>`;
+      } else if (currentLanguage === 'it') {
+        contactText = `Condividi qui la tua email/telefono e la passerò a un manager. Oppure scrivi a <b>booking@kinghousetravel.example</b>. <br><small>(Sostituisci con il tuo indirizzo reale.)</small>`;
+      } else {
+        contactText = `Share your email/phone here and I will pass it to a manager. Or write to <b>booking@kinghousetravel.example</b>. <br><small>(Replace with your real address.)</small>`;
+      }
+      addMsg('bot', contactText);
+    }
+    
+    function escapeHTML(str){ 
+      return str.replace(/[&<>"']/g, s=>({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[s] || s));
+    }
+    
+    chatSend.addEventListener('click', ()=>{ 
+      if(chatField.value.trim()) { 
+        handleUser(chatField.value.trim()); 
+        chatField.value=''; 
+        chatField.focus(); 
+      } 
+    });
+    
+    chatField.addEventListener('keydown', e=>{ 
+      if(e.key==='Enter'){ 
+        e.preventDefault(); 
+        chatSend.click(); 
+      } 
+    });
+    
+    chipbar.addEventListener('click', (e)=>{ 
+      const q = e.target.closest('.chip')?.dataset.q; 
+      if(!q) return; 
+      handleUser(q); 
+    });
+    
+    const KEY='kht_chat_state_v1';
+    function persist(){ 
+      localStorage.setItem(KEY, chatLog.innerHTML); 
+    }
+    
+    function restore(){ 
+      const html = localStorage.getItem(KEY); 
+      if(html){ 
+        chatLog.innerHTML = html; 
+      }
+    }
+    
+    function saveOpen(v){ 
+      localStorage.setItem(KEY+'_open', v? '1':'0'); 
+    }
+    
+    function restoreOpen(){ 
+      if(localStorage.getItem(KEY+'_open')==='1') { 
+        openChat(); 
+      }
+    }
+    
+    restore(); 
+    restoreOpen();
+    if(!chatLog.children.length){ 
+      botGreeting(); 
+    }
+  </script>
+</body>
+</html>
