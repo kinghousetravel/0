@@ -766,10 +766,13 @@ opacity: 1;
 <div class="about-content">
 <h2 data-translate="aboutTitle">About King House Travel</h2>
 <p data-translate="aboutDescription">
-King House Travel is an international company focused on organizing tours, wellness and cultural journeys across Europe. We create unique routes for those who value quality, comfort and harmony between rest and health.
+<strong>King House Travel</strong> — a private wellness-concierge of the new generation. We design individual journeys to leading spa resorts and licensed clinics in Europe, integrating diagnostics, restorative protocols and seamless logistics.
 </p>
-<p data-translate="aboutDirector">
-Under the leadership of our director, Eduard Korolov, we strive to provide exceptional travel experiences that combine wellness, culture, and adventure.
+<p data-translate="aboutDescription2">
+We work in a one-to-one format: personal curator, transparent conditions, confidentiality. Our focus is measurable results: quality sleep, stable energy, weight balance and anti-stress.
+</p>
+<p class="muted" data-translate="aboutImportant">
+<em>Important:</em> we are not a medical facility; medical services are provided exclusively by licensed partners.
 </p>
 <div class="mission-statement">
 <h3 data-translate="missionTitle">Our Mission</h3>
@@ -1334,6 +1337,7 @@ Learn more <i class="fa-solid fa-arrow-right"></i>
 </section>
 <!-- CONTACT SECTION -->
 <section id="contact">
+<section id="contact">
 <div class="container">
 <div class="section-head">
 <h2 data-translate="contactTitle">Contact Us</h2>
@@ -1368,7 +1372,8 @@ Learn more <i class="fa-solid fa-arrow-right"></i>
 <div class="icon"><i class="fa-solid fa-clock"></i></div>
 <div>
 <strong data-translate="hours">Working Hours</strong>
-<p data-translate="hoursDetail">Monday-Friday: 9:00 - 18:00<br>Saturday: 10:00 - 14:00</p>
+<p data-translate="hoursDetail">Monday-Friday: 9:00 - 18:00 · Saturday: 10:00 - 14:00</p>
+<p class="muted" data-translate="hoursSupport">For clients traveling — 24/7 support.</p>
 </div>
 </div>
 <div class="socials">
@@ -1438,7 +1443,7 @@ Learn more <i class="fa-solid fa-arrow-right"></i>
 </div>
 <div class="copy" data-translate="copyright">© 2025 King House Travel. All rights reserved.</div>
 <div class="director-credit" data-translate="directorCredit">Director: Eduard Korolov</div>
-<div class="developer-credit" data-translate="developerCredit">Website developed by <a href="https://www.linkedin.com/in/tetiana-kotolup-1685892a1/" target="_blank">Tetiana Kotolup</a></div>
+<div class="developer-credit" data-translate="developerCredit">Website developed by <a href="https://www.linkedin.com/in/tetiana-kotolup-1685892a1/" target="_blank" style="color: var(--accent);">Tetiana Kotolup</a></div>
 </div>
 </footer>
 <!-- BLOG MODAL -->
@@ -1691,9 +1696,9 @@ const translations = {
     clientsCount: "Clients",
     experienceYears: "Years Experience",
     aboutTitle: "About King House Travel",
-    aboutDescription: "King House Travel is an international company focused on organizing tours, wellness and cultural journeys across Europe. We create unique routes for those who value quality, comfort and harmony between rest and health.",
-    aboutDirector: "Under the leadership of our director, Eduard Korolov, we strive to provide exceptional travel experiences that combine wellness, culture, and adventure.",
-    missionTitle: "Our Mission",
+    aboutDescription: "<strong>King House Travel</strong> — a private wellness-concierge of the new generation. We design individual journeys to leading spa resorts and licensed clinics in Europe, integrating diagnostics, restorative protocols and seamless logistics.",
+    aboutDescription2: "We work in a one-to-one format: personal curator, transparent conditions, confidentiality. Our focus is measurable results: quality sleep, stable energy, weight balance and anti-stress.",
+    aboutImportant: "<em>Important:</em> we are not a medical facility; medical services are provided exclusively by licensed partners.", missionTitle: "Our Mission",
     missionDescription: "We help people discover new countries, combining travel with wellness programs, cultural events and active recreation.",
     featuredLinksTitle: "Special Offers",
     featuredLinksSubtitle: "Exclusive journeys and unique experiences",
@@ -1758,7 +1763,7 @@ const translations = {
     phone: "Phone",
     email: "Email",
     hours: "Working Hours",
-    hoursDetail: "Monday-Friday: 9:00 - 18:00<br>Saturday: 10:00 - 14:00",
+    hoursDetail: "Monday-Friday: 9:00 - 18:00 Saturday: 10:00 - 14:00",
     sendMessage: "Send us a Message",
     name: "Name",
     subject: "Subject",
@@ -1814,9 +1819,9 @@ const translations = {
     clientsCount: "Klienti",
     experienceYears: "Let zkušeností",
     aboutTitle: "O King House Travel",
-    aboutDescription: "King House Travel je mezinárodní společnost zaměřená na organizaci zájezdů, wellness a kulturních cest po Evropě. Vytváříme unikátní trasy pro ty, kteří si cení kvalitu, pohodlí a harmonii mezi odpočinkem a zdravím.",
-    aboutDirector: "Pod vedením našeho ředitele Eduarda Korolova se snažíme poskytovat výjimečné zážitky z cest, které kombinují wellness, kulturu a dobrodružství.",
-    missionTitle: "Naše mise",
+    aboutDescription: "<strong>King House Travel</strong> — soukromý wellness-concierge nové generace. Navrhujeme individuální cesty do předních lázeňských středisek a licencovaných klinik v Evropě, integrujeme diagnostiku, restorativní protokoly a bezproblémovou logistiku.",
+    aboutDescription2: "Pracujeme v formátu one-to-one: osobní kurátor, transparentní podmínky, důvěrnost. Naše zaměření je měřitelné výsledky: kvalitní spánek, stabilní energie, rovnováha hmotnosti a anti-stres.",
+     missionTitle: "Naše mise",
     missionDescription: "Pomáháme lidem objevovat nové země a spojujeme cestování s wellness programy, kulturními akcemi a aktivní rekreací.",
     featuredLinksTitle: "Speciální nabídky",
     featuredLinksSubtitle: "Exkluzivní cesty a jedinečné zážitky",
@@ -1937,8 +1942,9 @@ const translations = {
     clientsCount: "Kunden",
     experienceYears: "Jahre Erfahrung",
     aboutTitle: "Über King House Travel",
-    aboutDescription: "King House Travel ist ein internationales Unternehmen, das auf die Organisation von Reisen, Wellness- und Kulturreisen in ganz Europa spezialisiert ist. Wir erstellen einzigartige Routen für diejenigen, die Qualität, Komfort und Harmonie zwischen Ruhe und Gesundheit schätzen.",
-    aboutDirector: "Unter der Leitung unseres Direktors Eduard Korolov bemühen wir uns, außergewöhnliche Reiseerlebnisse zu bieten, die Wellness, Kultur und Abenteuer verbinden.",
+    aboutDescription: "<strong>King House Travel</strong> — ein privater Wellness-Concierge der neuen Generation. Wir gestalten individuelle Reisen zu führenden Kurorten und lizenzierten Kliniken in Europa und integrieren Diagnostik, restaurative Protokolle und nahtlose Logistik.",
+    aboutDescription2: "Wir arbeiten im One-to-One-Format: persönlicher Kurator, transparente Bedingungen, Vertraulichkeit. Unser Fokus sind messbare Ergebnisse: qualitativ hochwertiger Schlaf, stabile Energie, Gewichtsbalance und Anti-Stress.",
+    aboutImportant: "<em>Wichtig:</em> Wir sind keine medizinische Einrichtung; medizinische Dienstleistungen werden ausschließlich von lizenzierten Partnern erbracht.",
     missionTitle: "Unsere Mission",
     missionDescription: "Wir helfen Menschen, neue Länder zu entdecken und kombinieren Reisen mit Wellness-Programmen, kulturellen Veranstaltungen und aktiver Erholung.",
     featuredLinksTitle: "Sonderangebote",
@@ -2060,9 +2066,10 @@ const translations = {
     clientsCount: "Clientes",
     experienceYears: "Años de Experiencia",
     aboutTitle: "Acerca de King House Travel",
-    aboutDescription: "King House Travel es una compañía internacional enfocada en la organización de tours, viajes de bienestar y culturales por toda Europa. Creamos rutas únicas para aquellos que valoran la calidad, el confort y la armonía entre el descanso y la salud.",
-    aboutDirector: "Bajo el liderazgo de nuestro director, Eduard Korolov, nos esforzamos por proporcionar experiencias de viaje excepcionales que combinan bienestar, cultura y aventura.",
-    missionTitle: "Nuestra Misión",
+    aboutDescription: "<strong>King House Travel</strong> — un wellness-concierge privado de nueva generación. Diseñamos viajes individuales a los principales centros de spa y clínicas con licencia de Europa, integrando diagnósticos, protocolos restaurativos y logística sin problemas.",
+    aboutDescription2: "Trabajamos en formato uno a uno: curador personal, condiciones transparentes, confidencialidad. Nuestro enfoque son resultados medibles: sueño de calidad, energía estable, equilibrio de peso y antiestrés.",
+    aboutImportant: "<em>Importante:</em> no somos un centro médico; los servicios médicos son proporcionados exclusivamente por socios con licencia.",
+   missionTitle: "Nuestra Misión",
     missionDescription: "Ayudamos a las personas a descubrir nuevos países, combinando viajes con programas de bienestar, eventos culturales y recreación activa.",
     featuredLinksTitle: "Ofertas Especiales",
     featuredLinksSubtitle: "Viajes exclusivos y experiencias únicas",
@@ -2183,8 +2190,9 @@ const translations = {
     clientsCount: "Clients",
     experienceYears: "Années d'Expérience",
     aboutTitle: "À propos de King House Travel",
-    aboutDescription: "King House Travel est une entreprise internationale spécialisée dans l'organisation de circuits, de voyages de bien-être et culturels à travers l'Europe. Nous créons des itinéraires uniques pour ceux qui apprécient la qualité, le confort et l'harmonie entre repos et santé.",
-    aboutDirector: "Sous la direction de notre directeur, Eduard Korolov, nous nous efforçons de fournir des expériences de voyage exceptionnelles qui combinent bien-être, culture et aventure.",
+    aboutDescription: "<strong>King House Travel</strong> — un wellness-concierge privé de nouvelle génération. Nous concevons des voyages individuels vers les stations thermales de premier plan et les cliniques agréées d'Europe, en intégrant le diagnostic, les protocoles de restauration et une logistique transparente.",
+    aboutDescription2: "Nous travaillons en format un-à-un : conservateur personnel, conditions transparentes, confidentialité. Notre objectif est des résultats mesurables : sommeil de qualité, énergie stable, équilibre pondéral et anti-stress.",
+    aboutImportant: "<em>Important :</em> nous ne sommes pas un établissement médical ; les services médicaux sont fournis exclusivement par des partenaires agréés.",
     missionTitle: "Notre Mission",
     missionDescription: "Nous aidons les gens à découvrir de nouveaux pays, en combinant voyages avec des programmes de bien-être, des événements culturels et des loisirs actifs.",
     featuredLinksTitle: "Offres Spéciales",
@@ -2306,9 +2314,10 @@ const translations = {
     clientsCount: "Clienti",
     experienceYears: "Anni di Esperienza",
     aboutTitle: "Informazioni su King House Travel",
-    aboutDescription: "King House Travel è un'azienda internazionale focalizzata sull'organizzazione di tour, viaggi di benessere e culturali in tutta Europa. Creiamo itinerari unici per coloro che apprezzano la qualità, il comfort e l'armonia tra riposo e salute.",
-    aboutDirector: "Sotto la direzione del nostro direttore, Eduard Korolov, ci sforziamo di fornire esperienze di viaggio eccezionali che combinano benessere, cultura e avventura.",
-    missionTitle: "La Nostra Missione",
+    aboutDescription: "<strong>King House Travel</strong> — un wellness-concierge privato di nuova generazione. Progettiamo viaggi individuali verso i principali resort termali e cliniche autorizzate in Europa, integrando diagnostica, protocolli riparativi e logistica senza soluzione di continuità.",
+    aboutDescription2: "Lavoriamo in formato uno-a-uno: curatore personale, condizioni trasparenti, riservatezza. Il nostro focus sono risultati misurabili: sonno di qualità, energia stabile, equilibrio del peso e anti-stress.",
+    aboutImportant: "<em>Importante:</em> non siamo una struttura medica; i servizi medici sono forniti esclusivamente da partner autorizzati.",
+     missionTitle: "La Nostra Missione",
     missionDescription: "Aiutiamo le persone a scoprire nuovi paesi, combinando viaggi con programmi di benessere, eventi culturali e ricreazione attiva.",
     featuredLinksTitle: "Offerte Speciali",
     featuredLinksSubtitle: "Viaggi esclusivi ed esperienze uniche",
@@ -2429,8 +2438,9 @@ const translations = {
     clientsCount: "Klienci",
     experienceYears: "Lat Doświadczenia",
     aboutTitle: "O King House Travel",
-    aboutDescription: "King House Travel to międzynarodowa firma specjalizująca się w organizacji wycieczek, podróży wellness i kulturalnych po całej Europie. Tworzymy unikalne trasy dla tych, którzy cenią jakość, komfort i harmonię między odpoczynkiem a zdrowiem.",
-    aboutDirector: "Pod kierownictwem naszego dyrektora, Eduarda Korolova, dążymy do zapewnienia wyjątkowych doświadczeń podróżniczych, które łączą wellness, kulturę i przygodę.",
+    aboutDescription: "<strong>King House Travel</strong> — prywatny wellness-concierge nowej generacji. Projektujemy indywidualne podróże do wiodących uzdrowisk i licencjonowanych klinik w Europie, integrując diagnostykę, protokoły regeneracyjne i bezproblemową logistykę.",
+    aboutDescription2: "Pracujemy w formacie jeden-na-jeden: osobisty kurator, transparentne warunki, poufność. Nasz nacisk kładzie się na mierzalne wyniki: jakość snu, stabilna energia, równowaga wagi i anti-stress.",
+    aboutImportant: "<em>Ważne:</em> nie jesteśmy placówką medyczną; usługi medyczne świadczone są wyłącznie przez licencjonowanych partnerów.",
     missionTitle: "Nasza Misja",
     missionDescription: "Pomagamy ludziom odkrywać nowe kraje, łącząc podróże z programami wellness, wydarzeniami kulturalnymi i aktywnym wypoczynkiem.",
     featuredLinksTitle: "Oferty Specjalne",
@@ -2552,8 +2562,8 @@ const translations = {
     clientsCount: "Clientes",
     experienceYears: "Anos de Experiência",
     aboutTitle: "Sobre a King House Travel",
-    aboutDescription: "A King House Travel é uma empresa internacional focada na organização de tours, viagens de bem-estar e culturais por toda a Europa. Criamos rotas únicas para aqueles que valorizam qualidade, conforto e harmonia entre descanso e saúde.",
-    aboutDirector: "Sob a liderança de nosso diretor, Eduard Korolov, nos esforçamos para fornecer experiências de viagem excepcionais que combinam bem-estar, cultura e aventura.",
+    aboutDescription: "<strong>King House Travel</strong> — um wellness-concierge privado da nova geração. Projetamos jornadas individuais para os principais resorts de spa e clínicas licenciadas na Europa, integrando diagnósticos, protocolos restaurativos e logística perfeita.",
+    aboutDescription2: "Trabalhamos no formato um-para-um: curador pessoal, condições transparentes, confidencialidade. Nosso foco são resultados mensuráveis: sono de qualidade, energia estável, equilíbrio de peso e anti-stress.",
     missionTitle: "Nossa Missão",
     missionDescription: "Ajudamos as pessoas a descobrir novos países, combinando viagens com programas de bem-estar, eventos culturais e recreação ativa.",
     featuredLinksTitle: "Ofertas Especiais",
@@ -2675,8 +2685,9 @@ const translations = {
     clientsCount: "Клиенты",
     experienceYears: "Лет опыта",
     aboutTitle: "О King House Travel",
-    aboutDescription: "King House Travel - это международная компания, специализирующаяся на организации туров, оздоровительных и культурных путешествий по всей Европе. Мы создаем уникальные маршруты для тех, кто ценит качество, комфорт и гармонию между отдыхом и здоровьем.",
-    aboutDirector: "Под руководством нашего директора Эдуарда Королова мы стремимся предоставлять исключительные впечатления от путешествий, сочетающие оздоровление, культуру и приключения.",
+    aboutDescription: "<strong>King House Travel</strong> — частный wellness-concierge нового поколения. Мы проектируем индивидуальные путешествия в ведущие спа-курорты и лицензированные клиники Европы, интегрируя диагностику, восстановительные протоколы и бесшовную логистику.",
+    aboutDescription2: "Мы работаем в формате один-на-один: личный куратор, прозрачные условия, конфиденциальность. Наш фокус — измеримые результаты: качественный сон, стабильная энергия, баланс веса и anti-stress.",
+    aboutImportant: "<em>Важно:</em> мы не являемся медицинским учреждением; медицинские услуги предоставляются исключительно лицензированными партнерами.",
     missionTitle: "Наша миссия",
     missionDescription: "Мы помогаем людям открывать новые страны, сочетая путешествия с оздоровительными программами, культурными мероприятиями и активным отдыхом.",
     featuredLinksTitle: "Специальные предложения",
@@ -2798,8 +2809,9 @@ const translations = {
     clientsCount: "Клієнти",
     experienceYears: "Роки досвіду",
     aboutTitle: "Про King House Travel",
-    aboutDescription: "King House Travel - це міжнародна компанія, що спеціалізується на організації турів, оздоровчих та культурних подорожей по всій Європі. Ми створюємо унікальні маршрути для тих, хто цінує якість, комфорт та гармонію між відпочинком та здоров'ям.",
-    aboutDirector: "Під керівництвом нашого директора Едуарда Королова ми прагнемо надавати виняткові враження від подорожей, що поєднують оздоровлення, культуру та пригоди.",
+    aboutDescription: "<strong>King House Travel</strong> — приватний wellness-concierge нового покоління. Ми проєктуємо індивідуальні подорожі до провідних спа-курортів і ліцензованих клінік Європи, інтегруючи діагностику, відновлювальні протоколи та безшовну логістику.",
+    aboutDescription2: "Працюємо у форматі one-to-one: особистий куратор, прозорі умови, конфіденційність. Наш фокус — вимірний результат: якісний сон, стабільна енергія, баланс ваги та anti-stress.",
+    aboutImportant: "<em>Важливо:</em> ми не є медичним закладом; медичні послуги надають виключно ліцензовані партнери.",
     missionTitle: "Наша місія",
     missionDescription: "Ми допомагаємо людям відкривати нові країни, поєднуючи подорожі з оздоровчими програмами, культурними заходами та активним відпочинком.",
     featuredLinksTitle: "Спеціальні пропозиції",
@@ -2921,9 +2933,10 @@ const translations = {
     clientsCount: "客户",
     experienceYears: "年经验",
     aboutTitle: "关于King House Travel",
-    aboutDescription: "King House Travel是一家专注于组织欧洲各地旅行、养生和文化之旅的国际公司。我们为重视质量、舒适度和休息与健康之间和谐的人创造独特路线。",
-    aboutDirector: "在我们的董事爱德华·科罗洛夫的领导下，我们努力提供结合养生、文化和冒险的卓越旅行体验。",
-    missionTitle: "我们的使命",
+   aboutDescription: "<strong>King House Travel</strong> — 新一代私人健康管家。我们设计前往欧洲领先的水疗度假村和持牌诊所的个性化旅程，整合诊断、恢复方案和无缝物流。",
+    aboutDescription2: "我们采用一对一模式：个人策展人，透明条件，保密性。我们的重点是可衡量的结果：优质睡眠，稳定能量，体重平衡和抗压力。",
+    aboutImportant: "<em>重要：</em> 我们不是医疗机构；医疗服务仅由持牌合作伙伴提供。",
+      missionTitle: "我们的使命",
     missionDescription: "我们帮助人们发现新的国家，将旅行与养生计划、文化活动和积极娱乐结合起来。",
     featuredLinksTitle: "特别优惠",
     featuredLinksSubtitle: "独家旅行和独特体验",
@@ -3044,9 +3057,10 @@ const translations = {
     clientsCount: "クライアント",
     experienceYears: "経験年数",
     aboutTitle: "King House Travelについて",
-    aboutDescription: "King House Travelは、ヨーロッパ全体のツアー、ウェルネスおよび文化の旅の組織に焦点を当てた国際的な会社です。私たちは、質、快適さ、休息と健康の調和を重視する人々のためにユニークなルートを作成します。",
-    aboutDirector: "当社のディレクターであるエドゥアルド・コロロフのリーダーシップの下、私たちはウェルネス、文化、冒険を組み合わせた卓越した旅行体験を提供するよう努めています。",
-    missionTitle: "私たちの使命",
+   aboutDescription: "<strong>King House Travel</strong> — 新世代のプライベートウェルネスコンシェルジュ。私たちは、診断、回復プロトコル、シームレスなロジスティクスを統合し、ヨーロッパの主要なスパリゾートおよびライセンス済みクリニックへの個別の旅を設計しています。",
+    aboutDescription2: "ワンツーワン形式で作業しています：個人キュレーター、透明な条件、機密性。私たちの焦点は、測定可能な結果です：質の高い睡眠、安定したエネルギー、体重のバランスと抗ストレス。",
+    aboutImportant: "<em>重要：</em> 私たちは医療施設ではありません。医療サービスはライセンスを持つパートナーによってのみ提供されます。",
+   missionTitle: "私たちの使命",
     missionDescription: "私たちは、人々が新しい国を発見し、旅行とウェルネスプログラム、文化イベント、アクティブなレクリエーションを組み合わせるのを支援します。",
     featuredLinksTitle: "特別オファー",
     featuredLinksSubtitle: "独占的な旅とユニークな体験",
@@ -3167,9 +3181,10 @@ const translations = {
     clientsCount: "고객",
     experienceYears: "경험 연수",
     aboutTitle: "King House Travel 소개",
-    aboutDescription: "King House Travel은 유럽 전역의 투어, 웰니스 및 문화 여행을 조직하는 데 초점을 둔 국제 회사입니다. 우리는 품질, 편안함, 휴식과 건강의 조화를 중시하는 사람들을 위한 독특한 경로를 만듭니다.",
-    aboutDirector: "우리의 이사 에두아르드 코롤로프의 리더십 아래, 우리는 웰니스, 문화, 모험을 결합한 탁월한 여행 경험을 제공하기 위해 노력합니다.",
-    missionTitle: "우리의 사명",
+   aboutDescription: "<strong>King House Travel</strong> — 새로운 세대의 개인 웰니스 컨시어지. 우리는 진단, 회복 프로토콜 및 원활한 물류를 통합하여 유럽의 선도적인 스파 리조트 및 라이센스 클리닉으로의 개인 여정을 설계합니다.",
+    aboutDescription2: "일대일 형식으로 작업합니다 : 개인 큐레이터, 투명한 조건, 기밀성. 우리의 초점은 측정 가능한 결과입니다 : 양질의 수면, 안정적인 에너지, 체중 균형 및 항스트레스.",
+    aboutImportant: "<em>중요 :</em> 우리는 의료 시설이 아닙니다. 의료 서비스는 라이센스가 있는 파트너가 독점적으로 제공합니다.",
+     missionTitle: "우리의 사명",
     missionDescription: "우리는 사람들이 새로운 나라를 발견하고, 여행과 웰니스 프로그램, 문화 행사, 활동적인 레크리에이션을 결합하도록 돕습니다.",
     featuredLinksTitle: "특별 제안",
     featuredLinksSubtitle: "독점적인 여행과 독특한 경험",
@@ -3290,8 +3305,9 @@ const translations = {
     clientsCount: "عملاء",
     experienceYears: "سنوات الخبرة",
     aboutTitle: "حول King House Travel",
-    aboutDescription: "King House Travel هي شركة دولية تركز على تنظيم الجولات والرحلات الصحية والثقافية في جميع أنحاء أوروبا. نحن نخلق مسارات فريدة لأولئك الذين يقدرون الجودة والراحة والانسجام بين الراحة والصحة.",
-    aboutDirector: "تحت قيادة مديرنا إدوارد كورولوف، نسعى لتقديم تجارب سفر استثنائية تجمع بين العافية والثقافة والمغامرة.",
+   aboutDescription: "<strong>King House Travel</strong> — كونسيرج العافية الخاص من الجيل الجديد. نصمم رحلات فردية إلى أفضل منتجعات السبا والعيادات المرخصة في أوروبا، مع دمج التشخيص والبروتوكولات الاستعادة والخدمات اللوجستية السلسة.",
+    aboutDescription2: "نعمل بنظام واحد لواحد: أمين شخصي، شروط شفافة، سرية. تركيزنا هو نتائج قابلة للقياس: نوم جيد، طاقة مستقرة، توازن الوزن ومكافحة الإجهاد.",
+    aboutImportant: "<em>مهم:</em> لسنا منشأة طبية؛ الخدمات الطبية يقدمها الشركاء المرخصون فقط.",
     missionTitle: "مهمتنا",
     missionDescription: "نساعد الناس على اكتشاف بلدان جديدة، من خلال الجمع بين السفر وبرامج العافية والفعاليات الثقافية والترفيه النشط.",
     featuredLinksTitle: "عروض خاصة",
@@ -3413,8 +3429,9 @@ const translations = {
     clientsCount: "ग्राहक",
     experienceYears: "वर्षों का अनुभव",
     aboutTitle: "किंग हाउस ट्रैवल के बारे में",
-    aboutDescription: "किंग हाउस ट्रैवल एक अंतरराष्ट्रीय कंपनी है जो पूरे यूरोप में टूर, वेलनेस और सांस्कृतिक यात्राओं के आयोजन पर केंद्रित है। हम उन लोगों के लिए अनूठे मार्ग बनाते हैं जो गुणवत्ता, आराम और आराम और स्वास्थ्य के बीच सामंजस्य को महत्व देते हैं।",
-    aboutDirector: "हमारे निदेशक एडवर्ड कोरोलोव के नेतृत्व में, हम वेलनेस, संस्कृति और साहसिक को जोड़ने वाले असाधारण यात्रा अनुभव प्रदान करने का प्रयास करते हैं।",
+    aboutDescription: "<strong>किंग हाउस ट्रैवल</strong> — नई पीढ़ी का निजी वेलनेस-कॉन्सियर्ज। हम यूरोप के अग्रणी स्पा रिसॉर्ट और लाइसेंस प्राप्त क्लिनिकों के लिए व्यक्तिगत यात्राओं को डिजाइन करते हैं, निदान, पुनर्स्थापना प्रोटोकॉल और निरबाध लॉजिस्टिक्स को एकीकृत करते हैं।",
+    aboutDescription2: "हम वन-टू-वन प्रारूप में काम करते हैं: व्यक्तिगत क्यूरेटर, पारदर्शी शर्तें, गोपनीयता। हमारा ध्यान मापने योग्य परिणामों पर है: गुणवत्तापूर्ण नींद, स्थिर ऊर्जा, वजन संतुलन और एंटी-स्ट्रेस।",
+    aboutImportant: "<em>महत्वपूर्ण:</em> हम एक चिकित्सा सुविधा नहीं हैं; चिकित्सा सेवाएं केवल लाइसेंस प्राप्त भागीदारों द्वारा प्रदान की जाती हैं।",
     missionTitle: "हमारा मिशन",
     missionDescription: "हम लोगों को नए देशों की खोज में मदद करते हैं, यात्रा को वेलनेस कार्यक्रमों, सांस्कृतिक कार्यक्रमों और सक्रिय मनोरंजन के साथ जोड़ते हुए।",
     featuredLinksTitle: "विशेष ऑफ़र",
@@ -3863,5 +3880,6 @@ updateCart();
 </script>
 </body>
 </html>
+
 
 
