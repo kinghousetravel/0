@@ -220,7 +220,8 @@ animation: pulse 2s infinite;
 70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
 }
-/* NOTIFICATION *.notification {
+/* NOTIFICATION */
+.notification {
 position: fixed;
 bottom: 20px;
 left: 50%;
@@ -1336,7 +1337,6 @@ Learn more <i class="fa-solid fa-arrow-right"></i>
 </div>
 </section>
 <!-- CONTACT SECTION -->
-<!-- CONTACT SECTION -->
 <section id="contact">
 <div class="container">
 <div class="section-head">
@@ -1698,7 +1698,8 @@ const translations = {
     aboutTitle: "About King House Travel",
     aboutDescription: "<strong>King House Travel</strong> — a private wellness-concierge of the new generation. We design individual journeys to leading spa resorts and licensed clinics in Europe, integrating diagnostics, restorative protocols and seamless logistics.",
     aboutDescription2: "We work in a one-to-one format: personal curator, transparent conditions, confidentiality. Our focus is measurable results: quality sleep, stable energy, weight balance and anti-stress.",
-    aboutImportant: "<em>Important:</em> we are not a medical facility; medical services are provided exclusively by licensed partners.", missionTitle: "Our Mission",
+    aboutImportant: "<em>Important:</em> we are not a medical facility; medical services are provided exclusively by licensed partners.",
+    missionTitle: "Our Mission",
     missionDescription: "We help people discover new countries, combining travel with wellness programs, cultural events and active recreation.",
     featuredLinksTitle: "Special Offers",
     featuredLinksSubtitle: "Exclusive journeys and unique experiences",
@@ -1764,6 +1765,7 @@ const translations = {
     email: "Email",
     hours: "Working Hours",
     hoursDetail: "Monday-Friday: 9:00 - 18:00 Saturday: 10:00 - 14:00",
+    hoursSupport: "For clients traveling — 24/7 support.",
     sendMessage: "Send us a Message",
     name: "Name",
     subject: "Subject",
@@ -1798,7 +1800,8 @@ const translations = {
     chatTitle: "Travel Assistant",
     chatGreeting: "Hello! How can I help you today?",
     send: "Send",
-    quickContacts: "Quick Contacts"
+    quickContacts: "Quick Contacts",
+    emptyCart: "Your cart is empty"
   },
   // Czech translations
   cz: {
@@ -1820,8 +1823,9 @@ const translations = {
     experienceYears: "Let zkušeností",
     aboutTitle: "O King House Travel",
     aboutDescription: "<strong>King House Travel</strong> — soukromý wellness-concierge nové generace. Navrhujeme individuální cesty do předních lázeňských středisek a licencovaných klinik v Evropě, integrujeme diagnostiku, restorativní protokoly a bezproblémovou logistiku.",
-    aboutDescription2: "Pracujeme v formátu one-to-one: osobní kurátor, transparentní podmínky, důvěrnost. Naše zaměření je měřitelné výsledky: kvalitní spánek, stabilní energie, rovnováha hmotnosti a anti-stres.",
-     missionTitle: "Naše mise",
+    aboutDescription2: "Pracujeme v formátu one-to-one: osobní kurátor, transparentní podmínky, důvěrnost. Naše zaměření je měřitelné výsledky: kvalitní spánek, stabilní energie, rovnováha hmotnosti a anti-stress.",
+    aboutImportant: "<em>Důležité:</em> nejsme zdravotnické zařízení; zdravotní služby jsou poskytovány výhradně licencovanými partnery.",
+    missionTitle: "Naše mise",
     missionDescription: "Pomáháme lidem objevovat nové země a spojujeme cestování s wellness programy, kulturními akcemi a aktivní rekreací.",
     featuredLinksTitle: "Speciální nabídky",
     featuredLinksSubtitle: "Exkluzivní cesty a jedinečné zážitky",
@@ -1886,7 +1890,8 @@ const translations = {
     phone: "Telefon",
     email: "Email",
     hours: "Otevírací doba",
-    hoursDetail: "Pondělí-Pátek: 9:00 - 18:00<br>Sobota: 10:00 - 14:00",
+    hoursDetail: "Pondělí-Pátek: 9:00 - 18:00 Sobota: 10:00 - 14:00",
+    hoursSupport: "Pro klienty na cestách — 24/7 podpora.",
     sendMessage: "Pošlete nám zprávu",
     name: "Jméno",
     subject: "Předmět",
@@ -1898,7 +1903,7 @@ const translations = {
     messagePlaceholder: "Vaše zpráva",
     phonePlaceholder: "Telefon/WhatsApp",
     typeMessage: "Napište zprávu...",
-    footerDescription: "Mezinárodní wellness zájezdy a cestovní agentura specializující se na zdravotní cesty po Evropě.",
+    footerDescription: "Mezinárodní wellness zájezdy a cestovní agentura specializující se na zdravotní cesty po celé Evropě.",
     quickLinks: "Rychlé odkazy",
     legal: "Právní informace",
     terms: "Obchodní podmínky",
@@ -1921,7 +1926,8 @@ const translations = {
     chatTitle: "Cestovní asistent",
     chatGreeting: "Dobrý den! Jak vám dnes mohu pomoci?",
     send: "Odeslat",
-    quickContacts: "Rychlé kontakty"
+    quickContacts: "Rychlé kontakty",
+    emptyCart: "Váš košík je prázdný"
   },
   // German translations
   de: {
@@ -2010,7 +2016,8 @@ const translations = {
     phone: "Telefon",
     email: "E-Mail",
     hours: "Öffnungszeiten",
-    hoursDetail: "Montag-Freitag: 9:00 - 18:00<br>Samstag: 10:00 - 14:00",
+    hoursDetail: "Montag-Freitag: 9:00 - 18:00 Samstag: 10:00 - 14:00",
+    hoursSupport: "Für reisende Kunden — 24/7-Support.",
     sendMessage: "Senden Sie uns eine Nachricht",
     name: "Name",
     subject: "Betreff",
@@ -2045,7 +2052,8 @@ const translations = {
     chatTitle: "Reiseassistent",
     chatGreeting: "Hallo! Wie kann ich Ihnen heute helfen?",
     send: "Senden",
-    quickContacts: "Schnellkontakte"
+    quickContacts: "Schnellkontakte",
+    emptyCart: "Ihr Warenkorb ist leer"
   },
   // Spanish translations
   es: {
@@ -2069,7 +2077,7 @@ const translations = {
     aboutDescription: "<strong>King House Travel</strong> — un wellness-concierge privado de nueva generación. Diseñamos viajes individuales a los principales centros de spa y clínicas con licencia de Europa, integrando diagnósticos, protocolos restaurativos y logística sin problemas.",
     aboutDescription2: "Trabajamos en formato uno a uno: curador personal, condiciones transparentes, confidencialidad. Nuestro enfoque son resultados medibles: sueño de calidad, energía estable, equilibrio de peso y antiestrés.",
     aboutImportant: "<em>Importante:</em> no somos un centro médico; los servicios médicos son proporcionados exclusivamente por socios con licencia.",
-   missionTitle: "Nuestra Misión",
+    missionTitle: "Nuestra Misión",
     missionDescription: "Ayudamos a las personas a descubrir nuevos países, combinando viajes con programas de bienestar, eventos culturales y recreación activa.",
     featuredLinksTitle: "Ofertas Especiales",
     featuredLinksSubtitle: "Viajes exclusivos y experiencias únicas",
@@ -2124,7 +2132,7 @@ const translations = {
     winterCityTitle: "Spa Urbano de Invierno en Praga",
     winterCityDesc: "Experiencia de bienestar urbano con mercados navideños y eventos culturales",
     blogTitle: "Nuestro Blog",
-    blogSubtitle: "Consejos de viaje, recomendaciones de bienestar y guías de destinos",
+    blogSubtitle: "Consejos de viaje, recomendaciones de bienestar y guías de destino",
     readMore: "Leer Más",
     contactTitle: "Contáctanos",
     contactSubtitle: "Ponte en contacto para asesoramiento personalizado de viajes de bienestar",
@@ -2134,7 +2142,8 @@ const translations = {
     phone: "Teléfono",
     email: "Correo Electrónico",
     hours: "Horario de Trabajo",
-    hoursDetail: "Lunes-Viernes: 9:00 - 18:00<br>Sábado: 10:00 - 14:00",
+    hoursDetail: "Lunes-Viernes: 9:00 - 18:00 Sábado: 10:00 - 14:00",
+    hoursSupport: "Para clientes que viajan — soporte 24/7.",
     sendMessage: "Envíanos un Mensaje",
     name: "Nombre",
     subject: "Asunto",
@@ -2169,7 +2178,8 @@ const translations = {
     chatTitle: "Asistente de Viajes",
     chatGreeting: "¡Hola! ¿Cómo puedo ayudarte hoy?",
     send: "Enviar",
-    quickContacts: "Contactos Rápidos"
+    quickContacts: "Contactos Rápidos",
+    emptyCart: "Tu carrito está vacío"
   },
   // French translations
   fr: {
@@ -2225,7 +2235,7 @@ const translations = {
     seaDesc: "Thérapie par l'eau de mer, vitamine D et bien-être côtier",
     springDetoxTitle: "Retraite Détox à Karlovy Vary",
     springDetoxDesc: "Nettoyage corporel après l'hiver, bains minéraux et nutrition équilibrée",
-    springHikingTitle: "Retraite Active en Tchéquie",
+    springHikingTitle: "Retraite Actif en Tchéquie",
     springHikingDesc: "Randonnée dans les parcs nationaux, air frais et fitness en nature",
     springYogaTitle: "Retraite Yoga en Moravie",
     springYogaDesc: "Pratiques de yoga pour le renouveau, méditation et alimentation saine",
@@ -2258,7 +2268,8 @@ const translations = {
     phone: "Téléphone",
     email: "E-mail",
     hours: "Heures de Travail",
-    hoursDetail: "Lundi-Vendredi: 9:00 - 18:00<br>Samedi: 10:00 - 14:00",
+    hoursDetail: "Lundi-Vendredi: 9:00 - 18:00 Samedi: 10:00 - 14:00",
+    hoursSupport: "Pour les clients voyageant — support 24/7.",
     sendMessage: "Envoyez-nous un Message",
     name: "Nom",
     subject: "Sujet",
@@ -2293,7 +2304,8 @@ const translations = {
     chatTitle: "Assistant de Voyage",
     chatGreeting: "Bonjour! Comment puis-je vous aider aujourd'hui?",
     send: "Envoyer",
-    quickContacts: "Contacts Rapides"
+    quickContacts: "Contacts Rapides",
+    emptyCart: "Votre panier est vide"
   },
   // Italian translations
   it: {
@@ -2317,7 +2329,7 @@ const translations = {
     aboutDescription: "<strong>King House Travel</strong> — un wellness-concierge privato di nuova generazione. Progettiamo viaggi individuali verso i principali resort termali e cliniche autorizzate in Europa, integrando diagnostica, protocolli riparativi e logistica senza soluzione di continuità.",
     aboutDescription2: "Lavoriamo in formato uno-a-uno: curatore personale, condizioni trasparenti, riservatezza. Il nostro focus sono risultati misurabili: sonno di qualità, energia stabile, equilibrio del peso e anti-stress.",
     aboutImportant: "<em>Importante:</em> non siamo una struttura medica; i servizi medici sono forniti esclusivamente da partner autorizzati.",
-     missionTitle: "La Nostra Missione",
+    missionTitle: "La Nostra Missione",
     missionDescription: "Aiutiamo le persone a scoprire nuovi paesi, combinando viaggi con programmi di benessere, eventi culturali e ricreazione attiva.",
     featuredLinksTitle: "Offerte Speciali",
     featuredLinksSubtitle: "Viaggi esclusivi ed esperienze uniche",
@@ -2382,7 +2394,8 @@ const translations = {
     phone: "Telefono",
     email: "Email",
     hours: "Orari di Lavoro",
-    hoursDetail: "Lunedì-Venerdì: 9:00 - 18:00<br>Sabato: 10:00 - 14:00",
+    hoursDetail: "Lunedì-Venerdì: 9:00 - 18:00 Sabato: 10:00 - 14:00",
+    hoursSupport: "Per i clienti in viaggio — supporto 24/7.",
     sendMessage: "Invia un Messaggio",
     name: "Nome",
     subject: "Oggetto",
@@ -2417,7 +2430,8 @@ const translations = {
     chatTitle: "Assistente di Viaggio",
     chatGreeting: "Ciao! Come posso aiutarti oggi?",
     send: "Invia",
-    quickContacts: "Contatti Rapidi"
+    quickContacts: "Contatti Rapidi",
+    emptyCart: "Il tuo carrello è vuoto"
   },
   // Polish translations
   pl: {
@@ -2506,7 +2520,8 @@ const translations = {
     phone: "Telefon",
     email: "Email",
     hours: "Godziny Pracy",
-    hoursDetail: "Poniedziałek-Piątek: 9:00 - 18:00<br>Sobota: 10:00 - 14:00",
+    hoursDetail: "Poniedziałek-Piątek: 9:00 - 18:00 Sobota: 10:00 - 14:00",
+    hoursSupport: "Dla klientów podróżujących — wsparcie 24/7.",
     sendMessage: "Wyślij nam Wiadomość",
     name: "Imię",
     subject: "Temat",
@@ -2541,7 +2556,8 @@ const translations = {
     chatTitle: "Asystent Podróży",
     chatGreeting: "Cześć! Jak mogę Ci dziś pomóc?",
     send: "Wyślij",
-    quickContacts: "Szybkie Kontakty"
+    quickContacts: "Szybkie Kontakty",
+    emptyCart: "Twój koszyk jest pusty"
   },
   // Portuguese translations
   pt: {
@@ -2564,6 +2580,7 @@ const translations = {
     aboutTitle: "Sobre a King House Travel",
     aboutDescription: "<strong>King House Travel</strong> — um wellness-concierge privado da nova geração. Projetamos jornadas individuais para os principais resorts de spa e clínicas licenciadas na Europa, integrando diagnósticos, protocolos restaurativos e logística perfeita.",
     aboutDescription2: "Trabalhamos no formato um-para-um: curador pessoal, condições transparentes, confidencialidade. Nosso foco são resultados mensuráveis: sono de qualidade, energia estável, equilíbrio de peso e anti-stress.",
+    aboutImportant: "<em>Importante:</em> não somos uma instalação médica; serviços médicos são fornecidos exclusivamente por parceiros licenciados.",
     missionTitle: "Nossa Missão",
     missionDescription: "Ajudamos as pessoas a descobrir novos países, combinando viagens com programas de bem-estar, eventos culturais e recreação ativa.",
     featuredLinksTitle: "Ofertas Especiais",
@@ -2629,7 +2646,8 @@ const translations = {
     phone: "Telefone",
     email: "E-mail",
     hours: "Horário de Trabalho",
-    hoursDetail: "Segunda-Sexta: 9:00 - 18:00<br>Sábado: 10:00 - 14:00",
+    hoursDetail: "Segunda-Sexta: 9:00 - 18:00 Sábado: 10:00 - 14:00",
+    hoursSupport: "Para clientes viajando — suporte 24/7.",
     sendMessage: "Envie-nos uma Mensagem",
     name: "Nome",
     subject: "Assunto",
@@ -2664,7 +2682,8 @@ const translations = {
     chatTitle: "Assistente de Viagem",
     chatGreeting: "Olá! Como posso ajudar você hoje?",
     send: "Enviar",
-    quickContacts: "Contatos Rápidos"
+    quickContacts: "Contatos Rápidos",
+    emptyCart: "Seu carrinho está vazio"
   },
   // Russian translations
   ru: {
@@ -2753,7 +2772,8 @@ const translations = {
     phone: "Телефон",
     email: "Электронная почта",
     hours: "Рабочие часы",
-    hoursDetail: "Понедельник-Пятница: 9:00 - 18:00<br>Суббота: 10:00 - 14:00",
+    hoursDetail: "Понедельник-Пятница: 9:00 - 18:00 Суббота: 10:00 - 14:00",
+    hoursSupport: "Для путешествующих клиентов — поддержка 24/7.",
     sendMessage: "Отправить нам сообщение",
     name: "Имя",
     subject: "Тема",
@@ -2788,7 +2808,8 @@ const translations = {
     chatTitle: "Туристический ассистент",
     chatGreeting: "Здравствуйте! Чем я могу вам помочь сегодня?",
     send: "Отправить",
-    quickContacts: "Быстрые контакты"
+    quickContacts: "Быстрые контакты",
+    emptyCart: "Ваша корзина пуста"
   },
   // Ukrainian translations
   uk: {
@@ -2877,7 +2898,8 @@ const translations = {
     phone: "Телефон",
     email: "Електронна пошта",
     hours: "Робочі години",
-    hoursDetail: "Понеділок-П'ятниця: 9:00 - 18:00<br>Субота: 10:00 - 14:00",
+    hoursDetail: "Понеділок-П'ятниця: 9:00 - 18:00 Субота: 10:00 - 14:00",
+    hoursSupport: "Для клієнтів, що подорожують — підтримка 24/7.",
     sendMessage: "Надішліть нам повідомлення",
     name: "Ім'я",
     subject: "Тема",
@@ -2912,7 +2934,8 @@ const translations = {
     chatTitle: "Туристичний асистент",
     chatGreeting: "Вітаю! Чим я можу вам допомогти сьогодні?",
     send: "Надіслати",
-    quickContacts: "Швидкі контакти"
+    quickContacts: "Швидкі контакти",
+    emptyCart: "Ваш кошик порожній"
   },
   // Chinese translations
   zh: {
@@ -2933,10 +2956,10 @@ const translations = {
     clientsCount: "客户",
     experienceYears: "年经验",
     aboutTitle: "关于King House Travel",
-   aboutDescription: "<strong>King House Travel</strong> — 新一代私人健康管家。我们设计前往欧洲领先的水疗度假村和持牌诊所的个性化旅程，整合诊断、恢复方案和无缝物流。",
+    aboutDescription: "<strong>King House Travel</strong> — 新一代私人健康管家。我们设计前往欧洲领先的水疗度假村和持牌诊所的个性化旅程，整合诊断、恢复方案和无缝物流。",
     aboutDescription2: "我们采用一对一模式：个人策展人，透明条件，保密性。我们的重点是可衡量的结果：优质睡眠，稳定能量，体重平衡和抗压力。",
     aboutImportant: "<em>重要：</em> 我们不是医疗机构；医疗服务仅由持牌合作伙伴提供。",
-      missionTitle: "我们的使命",
+    missionTitle: "我们的使命",
     missionDescription: "我们帮助人们发现新的国家，将旅行与养生计划、文化活动和积极娱乐结合起来。",
     featuredLinksTitle: "特别优惠",
     featuredLinksSubtitle: "独家旅行和独特体验",
@@ -2975,7 +2998,7 @@ const translations = {
     summerVitaminDTitle: "亚得里亚海的维生素D",
     summerVitaminDDesc: "海水浴、阳光程序和维生素D增强",
     summerWaterTherapyTitle: "斯洛文尼亚水疗法",
-    summerWaterTherapyDesc: "海水疗法、游泳和关节健康的水疗程序",
+    summerWaterTherapyDesc: "关节健康的海水疗法、游泳和水疗程序",
     summerFitnessTitle: "阿尔卑斯山健身之旅",
     summerFitnessDesc: "山地徒步旅行、健身训练和高海拔健康饮食",
     autumnImmuneTitle: "免疫系统增强",
@@ -3001,7 +3024,8 @@ const translations = {
     phone: "电话",
     email: "电子邮件",
     hours: "工作时间",
-    hoursDetail: "周一至周五：9:00 - 18:00<br>周六：10:00 - 14:00",
+    hoursDetail: "周一至周五：9:00 - 18:00 周六：10:00 - 14:00",
+    hoursSupport: "对于旅行客户 — 24/7支持。",
     sendMessage: "给我们发送消息",
     name: "姓名",
     subject: "主题",
@@ -3036,7 +3060,8 @@ const translations = {
     chatTitle: "旅行助手",
     chatGreeting: "你好！今天我能为您做什么？",
     send: "发送",
-    quickContacts: "快速联系人"
+    quickContacts: "快速联系人",
+    emptyCart: "您的购物车是空的"
   },
   // Japanese translations
   ja: {
@@ -3057,10 +3082,10 @@ const translations = {
     clientsCount: "クライアント",
     experienceYears: "経験年数",
     aboutTitle: "King House Travelについて",
-   aboutDescription: "<strong>King House Travel</strong> — 新世代のプライベートウェルネスコンシェルジュ。私たちは、診断、回復プロトコル、シームレスなロジスティクスを統合し、ヨーロッパの主要なスパリゾートおよびライセンス済みクリニックへの個別の旅を設計しています。",
-    aboutDescription2: "ワンツーワン形式で作業しています：個人キュレーター、透明な条件、機密性。私たちの焦点は、測定可能な結果です：質の高い睡眠、安定したエネルギー、体重のバランスと抗ストレス。",
-    aboutImportant: "<em>重要：</em> 私たちは医療施設ではありません。医療サービスはライセンスを持つパートナーによってのみ提供されます。",
-   missionTitle: "私たちの使命",
+    aboutDescription: "<strong>King House Travel</strong> — 新世代のプライベートウェルネスコンシェルジュ。私たちは、診断、回復プロトコル、シームレスなロジスティクスを統合し、ヨーロッパの主要なスパリゾートおよびライセンス済みクリニックへの個別の旅を設計しています。",
+    aboutDescription2: "ワンツーワン形式で作業しています : 個人キュレーター、透明な条件、機密性。私たちの焦点は、測定可能な結果です : 質の高い睡眠、安定したエネルギー、体重のバランスと抗ストレス。",
+    aboutImportant: "<em>重要 :</em> 私たちは医療施設ではありません。医療サービスはライセンスを持つパートナーによってのみ提供されます。",
+    missionTitle: "私たちの使命",
     missionDescription: "私たちは、人々が新しい国を発見し、旅行とウェルネスプログラム、文化イベント、アクティブなレクリエーションを組み合わせるのを支援します。",
     featuredLinksTitle: "特別オファー",
     featuredLinksSubtitle: "独占的な旅とユニークな体験",
@@ -3078,8 +3103,8 @@ const translations = {
     italianToursSubtitle: "ウェルネスプログラムと組み合わせたイタリアの美しさを発見",
     veniceSpaTitle: "ヴェネツィアスパリトリート",
     veniceSpaDesc: "運河の景色を眺めながらヴェネツィアの中心部で贅沢なスパトリートメント",
-    tuscanyWellnessTitle: "トスカーナウェルネスエスケープ",
-    tuscanyWellnessDesc: "トスカーナの丘での田舎のウェルネスリトリート、ワインセラピー付き",
+    tuscanyWellnessTitle: "トスカナウェルネスエスケープ",
+    tuscanyWellnessDesc: "トスカナの丘での田舎のウェルネスリトリート、ワインセラピー付き",
     alpsWellnessTitle: "ドロミティのアルプスウェルネス",
     alpsWellnessDesc: "イタリアのアルプスでの山の空気療法と贅沢なスパ",
     healthToursTitle: "季節別健康ツアー",
@@ -3088,7 +3113,7 @@ const translations = {
     detoxDesc: "体の浄化、ミネラルバス、バランスの取れた栄養",
     alpsTitle: "アルプスの山岳療法",
     alpsDesc: "新鮮な山の空気、ハイキング、自然のウェルネス",
-    seaTitle: "アドリア海のタラソセラピー",
+    seaTitle: "アドリア海でのタラソセラピー",
     seaDesc: "海水療法、ビタミンD、沿岸のウェルネス",
     springDetoxTitle: "カルロヴィ・ヴァリのデトックスリトリート",
     springDetoxDesc: "冬の後の体の浄化、ミネラルバス、バランスの取れた栄養",
@@ -3125,7 +3150,8 @@ const translations = {
     phone: "電話",
     email: "メール",
     hours: "営業時間",
-    hoursDetail: "月曜日-金曜日：9:00 - 18:00<br>土曜日：10:00 - 14:00",
+    hoursDetail: "月曜日-金曜日：9:00 - 18:00 土曜日：10:00 - 14:00",
+    hoursSupport: "旅行中のお客様 — 24時間365日のサポート。",
     sendMessage: "メッセージを送信",
     name: "名前",
     subject: "件名",
@@ -3144,7 +3170,7 @@ const translations = {
     privacy: "プライバシーポリシー",
     cookies: "クッキーポリシー",
     copyright: "© 2025 King House Travel. 全著作権所有。",
-    directorCredit: "ディレクター：エドゥアルド・コロロフ",
+    directorCredit: "ディレクター：エドゥアルト・コロロフ",
     developerCredit: "ウェブサイト開発者",
     addToCart: "追加",
     checkout: "チェックアウト",
@@ -3160,7 +3186,8 @@ const translations = {
     chatTitle: "旅行アシスタント",
     chatGreeting: "こんにちは！今日はどのようにお手伝いできますか？",
     send: "送信",
-    quickContacts: "クイックコンタクト"
+    quickContacts: "クイックコンタクト",
+    emptyCart: "あなたのカートは空です"
   },
   // Korean translations
   ko: {
@@ -3181,10 +3208,10 @@ const translations = {
     clientsCount: "고객",
     experienceYears: "경험 연수",
     aboutTitle: "King House Travel 소개",
-   aboutDescription: "<strong>King House Travel</strong> — 새로운 세대의 개인 웰니스 컨시어지. 우리는 진단, 회복 프로토콜 및 원활한 물류를 통합하여 유럽의 선도적인 스파 리조트 및 라이센스 클리닉으로의 개인 여정을 설계합니다.",
-    aboutDescription2: "일대일 형식으로 작업합니다 : 개인 큐레이터, 투명한 조건, 기밀성. 우리의 초점은 측정 가능한 결과입니다 : 양질의 수면, 안정적인 에너지, 체중 균형 및 항스트레스.",
+    aboutDescription: "<strong>King House Travel</strong> — 새로운 세대의 개인 웰니스 컨시어지. 우리는 진단, 회복 프로토콜 및 원활한 물류를 통합하여 유럽의 선도적인 스파 리조트 및 라이센스 클리닉으로의 개인 여정을 설계합니다.",
+    aboutDescription2: "원투원 형식으로 작업합니다 : 개인 큐레이터, 투명한 조건, 기밀성. 우리의 초점은 측정 가능한 결과입니다 : 양질의 수면, 안정적인 에너지, 체중 균형 및 항스트레스.",
     aboutImportant: "<em>중요 :</em> 우리는 의료 시설이 아닙니다. 의료 서비스는 라이센스가 있는 파트너가 독점적으로 제공합니다.",
-     missionTitle: "우리의 사명",
+    missionTitle: "우리의 사명",
     missionDescription: "우리는 사람들이 새로운 나라를 발견하고, 여행과 웰니스 프로그램, 문화 행사, 활동적인 레크리에이션을 결합하도록 돕습니다.",
     featuredLinksTitle: "특별 제안",
     featuredLinksSubtitle: "독점적인 여행과 독특한 경험",
@@ -3195,7 +3222,7 @@ const translations = {
     summerToursTitle: "여름 웰니스 투어",
     summerToursSubtitle: "여름 태양 아래에서의 에너지와 비타민 D",
     autumnToursTitle: "가을 웰니스 투어",
-    autumnToursSubtitle: "가을 색채 속 면역력 강화 및 스트레스 해소",
+    autumnToursSubtitle: "가을 색채 속 면역 강화 및 스트레스 해소",
     winterToursTitle: "겨울 웰니스 투어",
     winterToursSubtitle: "온천과 겨울 산의 평온함",
     italianToursTitle: "이탈리아 웰니스 투어",
@@ -3204,42 +3231,42 @@ const translations = {
     veniceSpaDesc: "운하 전망을 바라보며 베니스 중심부에서 고급 스파 트리트먼트",
     tuscanyWellnessTitle: "토스카나 웰니스 탈출",
     tuscanyWellnessDesc: "토스카나 언덕에서의 시골 웰니스 리트리트, 와인 테라피 포함",
-    alpsWellnessTitle: "돌로미티 알프스 웰니스",
+    alpsWellnessTitle: "돌로미티에서의 알프스 웰니스",
     alpsWellnessDesc: "이탈리아 알프스에서의 산 공기 요법과 고급 스파",
     healthToursTitle: "계절별 건강 투어",
     healthToursSubtitle: "일년 중 어느 계절에도 완벽한 건강 투어를 발견",
-    detoxTitle: "카를로비 바리 디톡스 리트리트",
-    detoxDesc: "신체 정화, 미네랄 목욕, 균형 잡힌 영양",
-    alpsTitle: "알프스 산악 요법",
+    detoxTitle: "카를로비 바리에서의 디톡스 리트리트",
+    detoxDesc: "신체 정화, 미네랄 목욕 및 균형 잡힌 영양",
+    alpsTitle: "알프스에서의 산악 요법",
     alpsDesc: "신선한 산 공기, 하이킹, 자연 웰니스",
-    seaTitle: "아드리아해 탈라소테라피",
+    seaTitle: "아드리아해에서의 탈라소테라피",
     seaDesc: "해수 요법, 비타민 D, 해안 웰니스",
-    springDetoxTitle: "카를로비 바리 디톡스 리트리트",
-    springDetoxDesc: "겨울 후 신체 정화, 미네랄 목욕, 균형 잡힌 영양",
+    springDetoxTitle: "카를로비 바리에서의 디톡스 리트리트",
+    springDetoxDesc: "겨울 후의 신체 정화, 미네랄 목욕 및 균형 잡힌 영양",
     springHikingTitle: "체코에서의 액티브 리트리트",
-    springHikingDesc: "국립공원 하이킹, 신선한 공기, 자연 속 피트니스",
-    springYogaTitle: "모라바 요가 리트리트",
+    springHikingDesc: "국립공원에서의 하이킹, 신선한 공기, 자연 속 피트니스",
+    springYogaTitle: "모라바에서의 요가 리트리트",
     springYogaDesc: "갱신을 위한 요가 수행, 명상, 건강한 식단",
     summerVitaminDTitle: "아드리아해에서의 비타민 D",
     summerVitaminDDesc: "해수욕, 태양 절차, 비타민 D 강화",
-    summerWaterTherapyTitle: "슬로베니아 수 치료",
+    summerWaterTherapyTitle: "슬로베니아에서의 수 치료",
     summerWaterTherapyDesc: "관절 건강을 위한 탈라소테라피, 수영, 수 치료 절차",
-    summerFitnessTitle: "알프스 피트니스 투어",
+    summerFitnessTitle: "알프스에서의 피트니스 투어",
     summerFitnessDesc: "산악 하이킹, 피트니스 트레이닝, 고도에서의 건강한 식단",
     autumnImmuneTitle: "면역 체계 강화",
     autumnImmuneDesc: "허브 요법, 비타민 복합체, 스파 요법",
     autumnStressReliefTitle: "타트라에서의 항스트레스",
     autumnStressReliefDesc: "명상, 호흡 운동, 가을 숲 산책",
-    autumnDetoxTitle: "모라바 가을 디톡스",
+    autumnDetoxTitle: "모라바의 가을 디톡스",
     autumnDetoxDesc: "현지 제품과 와인 테라피를 사용한 계절별 디톡스",
-    winterThermalTitle: "슬로바키아 온천",
+    winterThermalTitle: "슬로바키아의 온천",
     winterThermalDesc: "치유 온천수와 겨울 스파 트리트먼트",
-    winterAlpsTitle: "오스트리아 알프스 웰니스",
+    winterAlpsTitle: "오스트리아에서의 알프스 웰니스",
     winterAlpsDesc: "오스트리아 알프스에서의 산 공기 요법과 고급 스파",
-    winterCityTitle: "프라하 겨울 도시 스파",
+    winterCityTitle: "프라하에서의 겨울 도시 스파",
     winterCityDesc: "크리스마스 마켓과 문화 행사가 있는 도시 웰니스 경험",
     blogTitle: "우리의 블로그",
-    blogSubtitle: "여행 팁, 웰니스 조언, 목적지 가이드",
+    blogSubtitle: "여행 팁, 웰니스 조언 및 목적지 가이드",
     readMore: "더 읽기",
     contactTitle: "문의하기",
     contactSubtitle: "맞춤형 웰니스 여행 조언을 위해 문의하세요",
@@ -3249,7 +3276,8 @@ const translations = {
     phone: "전화",
     email: "이메일",
     hours: "영업 시간",
-    hoursDetail: "월요일-금요일: 9:00 - 18:00<br>토요일: 10:00 - 14:00",
+    hoursDetail: "월요일-금요일: 9:00 - 18:00 토요일: 10:00 - 14:00",
+    hoursSupport: "여행 중인 고객 — 24/7 지원.",
     sendMessage: "메시지 보내기",
     name: "이름",
     subject: "제목",
@@ -3284,7 +3312,8 @@ const translations = {
     chatTitle: "여행 도우미",
     chatGreeting: "안녕하세요! 오늘 어떻게 도와드릴까요?",
     send: "보내기",
-    quickContacts: "빠른 연락처"
+    quickContacts: "빠른 연락처",
+    emptyCart: "당신의 장바구니는 비어 있습니다"
   },
   // Arabic translations
   ar: {
@@ -3305,7 +3334,7 @@ const translations = {
     clientsCount: "عملاء",
     experienceYears: "سنوات الخبرة",
     aboutTitle: "حول King House Travel",
-   aboutDescription: "<strong>King House Travel</strong> — كونسيرج العافية الخاص من الجيل الجديد. نصمم رحلات فردية إلى أفضل منتجعات السبا والعيادات المرخصة في أوروبا، مع دمج التشخيص والبروتوكولات الاستعادة والخدمات اللوجستية السلسة.",
+    aboutDescription: "<strong>King House Travel</strong> — كونسيرج العافية الخاص من الجيل الجديد. نصمم رحلات فردية إلى أفضل منتجعات السبا والعيادات المرخصة في أوروبا، مع دمج التشخيص والبروتوكولات الاستعادة والخدمات اللوجستية السلسة.",
     aboutDescription2: "نعمل بنظام واحد لواحد: أمين شخصي، شروط شفافة، سرية. تركيزنا هو نتائج قابلة للقياس: نوم جيد، طاقة مستقرة، توازن الوزن ومكافحة الإجهاد.",
     aboutImportant: "<em>مهم:</em> لسنا منشأة طبية؛ الخدمات الطبية يقدمها الشركاء المرخصون فقط.",
     missionTitle: "مهمتنا",
@@ -3373,7 +3402,8 @@ const translations = {
     phone: "الهاتف",
     email: "البريد الإلكتروني",
     hours: "ساعات العمل",
-    hoursDetail: "الإثنين-الجمعة: 9:00 - 18:00<br>السبت: 10:00 - 14:00",
+    hoursDetail: "الإثنين-الجمعة: 9:00 - 18:00 السبت: 10:00 - 14:00",
+    hoursSupport: "للعملاء المسافرين — دعم على مدار الساعة.",
     sendMessage: "أرسل لنا رسالة",
     name: "الاسم",
     subject: "الموضوع",
@@ -3408,8 +3438,71 @@ const translations = {
     chatTitle: "مساعد السفر",
     chatGreeting: "مرحبا! كيف يمكنني مساعدتك اليوم؟",
     send: "إرسال",
-    quickContacts: "جهات اتصال سريعة"
+    quickContacts: "جهات اتصال سريعة",
+    emptyCart: "سلة التسوق الخاصة بك فارغة"
   },
+  // Hindi translations
+  hi: {
+    home: "होम",
+    seasons: "सीज़न",
+    italianTours: "इतालवी टूर",
+    healthTours: "स्वास्थ्य टूर",
+    tours: "टूर",
+    reviews: "समीक्षा",
+    blog: "ब्लॉग",
+    contact: "संपर्क करें",
+    heroTitle: "स्वास्थ्य और वेलनेस यात्राएं खोजें",
+    heroSubtitle: "सभी सीज़न में रूपांतरक स्वास्थ्य-उन्मुखी टूर और वेलनेस रिट्रीट। चयन से भुगतान तक पेशेवर सेवा।",
+    viewSeasons: "सीज़न एक्सप्लोर करें",
+    contactUs: "हमसे संपर्क करें",
+    toursCount: "टूर",
+    countriesCount: "देश",
+    clientsCount: "ग्राहक",
+    experienceYears: "वर्षों का अनुभव",
+    aboutTitle: "किंग हाउस ट्रैवल के बारे में",
+    aboutDescription: "<strong>किंग हाउस ट्रैवल</strong> — नई पीढ़ी का निजी वेलनेस-कॉन्सियर्ज। हम यूरोप के अग्रणी स्पा रिसॉर्ट और लाइसेंस प्राप्त क्लिनिकों के लिए व्यक्तिगत यात्राओं को डिजाइन करते हैं, निदान, पुनर्स्थापना प्रोटोकॉल और निरबाध लॉजिस्टिक्स को एकीकृत करते हैं।",
+    aboutDescription2: "हम वन-टू-वन प्रारूप में काम करते हैं: व्यक्तिगत क्यूरेटर, पारदर्शी शर्तें, गोपनीयता। हमारा ध्यान मापने योग्य परिणामों पर है: गुणवत्तापूर्ण नींद, स्थिर ऊर्जा, वजन संतुलन और एंटी-स्ट्रेस।",
+    aboutImportant: "<em>महत्वपूर्ण:</em> हम एक चिकित्सा सुविधा नहीं हैं; चिकित्सा सेवाएं केवल लाइसेंस प्राप्त भागीदारों द्वारा प्रदान की जाती हैं।",
+    missionTitle: "हमारा मिशन",
+    missionDescription: "हम लोगों को नए देशों की खोज में मदद करते हैं, यात्रा को वेलनेस कार्यक्रमों, सांस्कृतिक कार्यक्रमों और सक्रिय मनोरंजन के साथ जोड़ते हुए।",
+    featuredLinksTitle: "विशेष ऑफ़र",
+    featuredLinksSubtitle: "अनन्य यात्राएं और अनूठे अनुभव",
+    seasonsTitle: "सीज़न के अनुसार टूर",
+    seasonsSubtitle: "अपनी वेलनेस यात्रा के लिए सही समय चुनें",
+    springToursTitle: "स्प्रिंग वेलनेस टूर",
+    springToursSubtitle: "सर्दियों के बाद नवीनीकरण और पुनर्जीवन",
+    summerToursTitle: "समर वेलनेस टूर",
+    summerToursSubtitle: "गर्मियों की धूप में ऊर्जा और विटामिन डी",
+    autumnToursTitle: "ऑटम वेलनेस टूर",
+    autumnToursSubtitle: "शरद ऋतु के रंगों में प्रतिरक्षा बढ़ाना और तनाव मुक्ति",
+    winterToursTitle: "विंटर वेलनेस टूर",
+    winterToursSubtitle: "थर्मल स्प्रिंग्स और सर्दियों में पहाड़ी शांति",
+    italianToursTitle: "इतालवी वेलनेस टूर",
+    italianToursSubtitle: "वेलनेस कार्यक्रमों के साथ इटली की सुंदरता की खोज करें",
+    veniceSpaTitle: "वेनिस स्पा रिट्रीट",
+    veniceSpaDesc: "नहरों के दृश्य के साथ वेनिस के दिल में लक्जरी स्पा उपचार",
+    tuscanyWellnessTitle: "टस्कनी वेलनेस एस्केप",
+    tuscanyWellnessDesc: "टस्कनी पहाड़ियों में ग्रामीण वेलनेस रिट्रीट वाइन थेरेपी के साथ",
+    alpsWellnessTitle: "डोलोमाइट्स में अल्पाइन वेलनेस",
+    alpsWellnessDesc: "इतालवी आल्प्स में पहाड़ी हवा थेरेपी और लक्जरी स्पा",
+    healthToursTitle: "सीज़नल हेल्थ टूर",
+    healthToursSubtitle: "वर्ष के किसी भी समय के लिए पूर्ण स्वास्थ्य टूर खोजें",
+    detoxTitle: "कार्लोवी वैरी में डिटॉक्स रिट्रीट",
+    detoxDesc: "शरीर की सफाई, खनिज स्नान और संतुलित पोषण",
+    alpsTitle: "आल्प्स में माउंटेन थेरेपी",
+    alpsDesc: "ताजा पहाड़ी हवा, ट्रेकिंग और प्राकृतिक वेलनेस",
+    seaTitle: "एड्रियाटिक पर थैलेसोथेरेपी",
+    seaDesc: "समुद्री जल थेरेपी, विटामिन डी और तटीय वेलनेस",
+    springDetoxTitle: "कार्लोवी वैरी में डिटॉक्स रिट्रीट",
+    springDetoxDesc: "सर्दियों के बाद शरीर की सफाई, खनिज स्नान और संतुलित पोषण",
+    springHikingTitle: "चेक गणराज्य में एक्टिव रिट्रीट",
+    springHikingDesc: "राष्ट्रीय उद्यानों में ट्रेकिंग, ताजी हवा और प्रकृति में फिटनेस",
+    springYogaTitle: "मोराविया में योग रिट्रीट",
+    springYogaDesc: "नवीनीकरण के लिए योग प्रथाएं, ध्यान और स्वस्थ खानपान",
+    summerVitaminDTitle: "एड्रियाटिक पर विटामिन डी",
+    summerVitaminDDesc: "समुद्री स्नान, सूर्य प्रक्रियाएं और विटामिन डी संवर्धन",
+    summerWaterTherapyTitle: "स्लोवेनिया में वाटर थेरेपी",
+    summerWaterTherapyDesc: "जो
   // Hindi translations
   hi: {
     home: "होम",
@@ -3880,6 +3973,7 @@ updateCart();
 </script>
 </body>
 </html>
+
 
 
 
