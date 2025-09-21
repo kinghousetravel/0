@@ -109,7 +109,8 @@
     header.top{display:flex; align-items:center; justify-content:space-between; gap:12px; position:sticky; top:0; z-index:5; padding:14px 16px; margin:-14px -16px 20px; background: linear-gradient(to bottom, rgba(220,237,200,.38), rgba(220,237,200,.18)); backdrop-filter: blur(8px); border-bottom:1px solid var(--stroke)}
     body.dark-theme header.top{background: linear-gradient(to bottom, rgba(10, 31, 15,.7), rgba(10, 31, 15,.4));}
     .brand{display:flex; align-items:center; gap:12px}
-    .logo{width:42px; height:42px; border-radius:50%; display:grid; place-items:center; font-weight:600; letter-spacing:.5px; color:#2e7d32; background: radial-gradient(120% 120% at 30% 30%, #81c784, var(--muted) 55%, #4caf50 100%); border:1px solid #a5d6a7; box-shadow: 0 2px 12px rgba(76, 175, 80,.35), inset 0 0 4px rgba(255,255,255,.5)}
+    .logo{width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center; overflow:hidden; background: radial-gradient(120% 120% at 30% 30%, #81c784, var(--muted) 55%, #4caf50 100%); border:1px solid #a5d6a7; box-shadow: 0 2px 12px rgba(76, 175, 80,.35), inset 0 0 4px rgba(255,255,255,.5)}
+    .logo img{width:100%; height:100%; object-fit:cover; border-radius:50%}
     .title{font-family: var(--font-heading); font-weight: var(--font-weight-semibold); font-size:18px; line-height:1; color: var(--text-heading)}
     .title small{display:block; font-family: var(--font-primary); font-weight: var(--font-weight-regular); color:var(--gold)}
     .actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
@@ -159,6 +160,9 @@
     body.dark-theme .company-info{background: linear-gradient(180deg, rgba(15, 47, 31,.6), rgba(15, 47, 31,.3));}
     .company-info h3{font-family: var(--font-heading); color:var(--accent); margin-bottom:12px; font-size:20px; font-weight: var(--font-weight-semibold)}
     .company-info p{font-family: var(--font-primary); color:var(--text-weak); line-height:1.6; font-weight: var(--font-weight-regular)}
+    .developer-info{margin-top:15px; padding-top:15px; border-top:1px solid rgba(76,175,80,.14); font-size:14px; color:var(--muted); font-family: var(--font-primary); font-weight: var(--font-weight-regular)}
+    .developer-info a{color:var(--accent); text-decoration:none; font-weight: var(--font-weight-semibold)}
+    .developer-info a:hover{text-decoration:underline}
     .modal{position:fixed; inset:0; display:none; place-items:center; z-index:20; background: rgba(255,255,255,.4); backdrop-filter: blur(8px)}
     body.dark-theme .modal{background: rgba(0,0,0,.7);}
     .modal.open{display:grid}
@@ -410,7 +414,7 @@
       loop 
       playsinline
     >
-      <source src="/kht/Відео без назви — зроблено у Clipchamp (4).mp4" type="video/mp4">
+      <source src="Flowers.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -420,7 +424,9 @@
   <div class="wrap">
     <header class="top">
       <div class="brand">
-        <div class="logo">KHT</div>
+        <div class="logo">
+          <img src="log.jpg" alt="King House Travel Logo">
+        </div>
         <div class="title">
           <span data-i18n="company-name">King House Travel</span> 
           <small data-i18n="season-title">Spring Tours 2026</small>
@@ -583,10 +589,17 @@
     <section class="company-info" lang="en">
       <h3 data-i18n="about-company">About King House Travel</h3>
       <p data-i18n="company-description">Founded in 2010, King House Travel specializes in luxury seasonal journeys across Europe's most breathtaking destinations. With over a decade of experience, we curate exclusive spring experiences that combine natural beauty, cultural immersion, and rejuvenating wellness. Our expert team ensures every detail of your journey is meticulously planned, from private transfers to 5-star accommodations and unique local experiences. We pride ourselves on creating unforgettable memories for our discerning clientele.</p>
+      
+      <div class="developer-info">
+        <p>Website designed and developed by <a href="https://www.linkedin.com/in/tetiana-kotolup-1685892a1/" target="_blank" rel="noopener noreferrer">Tetiana Kotolup</a></p>
+      </div>
     </section>
     
     <footer lang="en">
       <span data-i18n="copyright">© 2026 King House Travel. All rights reserved.</span>
+      <div class="developer-info">
+        <p>Website by <a href="https://www.linkedin.com/in/tetiana-kotolup-1685892a1/" target="_blank" rel="noopener noreferrer">Tetiana Kotolup</a></p>
+      </div>
     </footer>
   </div>
   <div class="modal" id="bookModal" aria-hidden="true" aria-labelledby="bookTitle" role="dialog">
@@ -644,7 +657,7 @@
     </div>
   </div>
   <audio id="bgMusic" loop playsinline preload="auto" muted autoplay>
-    <source src="/kht/sprint.mp3" type="audio/mpeg">
+    <source src="Carpetman_Black_Soil_-_Alleys_of_My_Mind_(MP3.tm).mp3" type="audio/mpeg">
   </audio>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
   <script>
@@ -1605,4 +1618,5 @@
     }
   </script>
 </body>
+
 </html>
